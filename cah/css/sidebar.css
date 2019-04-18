@@ -1,0 +1,70 @@
+.sidebar{
+    position: absolute;
+    top: 67px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    width: 265px;
+    background: #333d4b;
+    overflow: auto;
+}
+.sidebar_1{
+    border-bottom: 1px solid #3d4755;
+}
+.sidebar_1 .s_1{
+    float: left;
+    margin-top: 25px;
+    margin-right: 5px;
+    margin-left: 20px;
+}
+.sidebar_1 .s_2{
+    float: left;
+    margin-top: 0px;
+    line-height: 68px;
+    font-size: 14px;
+    color:#e7ebf0;
+}
+.sidebar_1 .s_3{
+    float: right;
+    margin-right: 24px;
+    margin-top: 26px;
+    /* display: none; */
+}
+.sidebar_1 ul{
+    display: none;
+}
+.sidebar_1 .s_4{
+    float: right;
+    margin-right: 19px;
+    margin-top: 28px;
+    margin-bottom: 31px;
+    display: none;
+}
+.sidebar_1 .s_5 li{
+    text-indent: 49px;
+    height: 40px;
+    line-height: 40px;
+    color: #e7ebf0;
+    font-size: 14px;
+}
+.sidebar_1:hover .s_4{
+    display: block;
+}
+.sidebar_1:hover .s_3{
+    display: none;
+}
+.sidebar_1:hover ul{
+    display: block;
+}
+.sidebar_1:hover{
+    border-bottom: none;
+}
+.sidebar_1 li:hover{
+    background: white;
+    color: #000000;
+}
+.sidebar_1:hover s_4{
+    border-right: 5px solid #17202e;
+    
+}
+
