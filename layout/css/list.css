@@ -1,0 +1,49 @@
+.list{
+    width: 1084px;
+    margin: 0 auto;
+    margin-top: 30px;
+
+}
+.right{
+    float: right;
+}
+.r_1{
+    margin-top: 2px;
+}
+.r_1 input{
+    width: 422px;
+    height: 38px;
+    font-size: 12px;
+    text-indent: 10px;
+    border: 1px solid #cccccc;
+    border-top-left-radius:2px;
+    border-bottom-left-radius:2px;
+
+}
+.r_1 .sumbit{
+    float: right;
+    width: 39px;
+    height: 38px;
+    border: 1px solid #cccccc;
+    border-left: none;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;  
+}
+.r_1 .sumbit img{
+    margin-left: 9px;
+    margin-top: 9px;
+}
+.r_2{
+    margin-top: 6px;
+}
+.r_2 a{
+    font-size: 11px;
+    color: #666666;
+    margin-right: 11px;
+}
+.r_2 a:hover{
+    color: #f7b200;
+}
+.clear{
+    clear: both;
+}

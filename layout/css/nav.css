@@ -1,0 +1,94 @@
+.nav{
+    width: 1084px;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+.nav .n{
+    float: left; 
+    margin-right: 50px;
+}
+.nav a{
+    color: #333333;
+    font-size: 15px;
+}
+.n1 .n1_1{
+    position: relative;
+    float: left;
+    margin-right: 50px;
+}
+.n1 .n1_2{
+    position: relative;
+    float: left;
+}
+.nav .n1{
+    float: left;
+    margin-right: 50px;
+    padding: 0 49px;
+    border-left: 1px solid #bbbbbb;
+    border-right: 1px solid #bbbbbb;
+}
+.nav a:hover{
+    color: #6744ac;
+}
+.hr1{
+    color: #e8e8e8;
+    margin-top: 7px;
+}
+.n1_1_1{
+    position: absolute;
+    top: 28px;
+    left: -82px;
+    padding: 0 43px;
+    padding-top: 30px;
+    padding-bottom: 23px;
+    border: 1px solid #e8e8e8;
+    display: none;
+    z-index: 1;
+    background: #ffffff;
+}
+.n1_2_1{
+    position: absolute;
+    top: 28px;
+    left: -62px;
+    padding: 0 43px;
+    padding-top: 30px;
+    padding-bottom: 23px;
+    border: 1px solid #e8e8e8;
+    display: none;
+    z-index: 2;
+    background: #ffffff;
+}
+.n1_1 .line{
+    position: absolute;
+    top: 21px;
+    height: 7px;
+    width: 60px;
+}
+.n1_1 .n1_1_1 p{
+    font-size: 15px;
+    color: #666666;
+}
+.n1_1 .n1_1_1 img{
+    width: 135px;
+    height: 135px;
+}
+.n1_1:hover .n1_1_1{
+    display: block;
+}
+.n1_2 .line{
+    position: absolute;
+    top: 21px;
+    height: 7px;
+    width: 60px;
+}
+.n1_2 .n1_2_1 p{
+    font-size: 15px;
+    color: #666666;
+}
+.n1_2 .n1_2_1 img{
+    width: 135px;
+    height: 135px;
+}
+.n1_2:hover .n1_2_1{
+    display: block;
+}
