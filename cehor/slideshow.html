@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>slideshow</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.view{
+			float: left;
+			width: 625px;
+			height: 270px;
+			margin: 20px 150px;
+			position: relative;
+			background: rgb(223, 146, 146,0.5);
+		}
+		.view img{
+			width:625px;
+			position: absolute;
+			display: none;
+			top: 0;
+			left: 0;
+		}
+		.view:hover .prev{
+			display: block
+		}
+		.view:hover .next{
+			display: block
+		}
+		.prev,.next{
+			margin-top:105px;
+			width: 45px;
+			height: 60px;
+			font-size: 30px;
+			line-height: 60px;
+			text-align: center;
+			cursor: pointer;
+			position: absolute;
+			display: none;
+			color: rgb(255,255,255,0.5);
+			background: rgb(156, 156, 204,0.5);
+		}
+		.prev{
+			left: 0;
+			border-top-right-radius: 5px;
+			border-bottom-right-radius: 5px;
+		}
+		.next{
+			right: 0;
+			border-top-left-radius: 5px;
+			border-bottom-left-radius: 5px;
+		}
+		.prev:hover{
+			color: green;
+		}
+		.next:hover{
+			color: green;
+		}
+		.caro{
+			position: absolute;
+			left: 222.5px;
+			top: 240px;
+		}
+		.caro span{
+			display: block;
+			width: 50px;
+			height: 6px;
+			float: left;
+			margin: 0 5px;
+			cursor:pointer;
+			border-radius: 2px;
+			background: rgba(36, 34, 34, 0.5);
+		}
+
+	</style>
+</head>
+<body>
+	<div class="view">
+		<img src="images/a.jpg" alt="">
+		<img src="images/b.png" alt="">
+		<img src="images/c.png" alt="">
+		<div class="prev">&lt;</div>
+		<div class="next">&gt;</div>
+		<div class="caro">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+	<div class="view">
+		<img src="images/a.jpg" alt="">
+		<img src="images/b.png" alt="">
+		<img src="images/c.png" alt="">
+		<div class="prev">&lt;</div>
+		<div class="next">&gt;</div>
+		<div class="caro">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+	<div class="view">
+		<img src="images/a.jpg" alt="">
+		<img src="images/b.png" alt="">
+		<img src="images/c.png" alt="">
+		<div class="prev">&lt;</div>
+		<div class="next">&gt;</div>
+		<div class="caro">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+	<div class="view">
+		<img src="images/a.jpg" alt="">
+		<img src="images/b.png" alt="">
+		<img src="images/c.png" alt="">
+		<div class="prev">&lt;</div>
+		<div class="next">&gt;</div>
+		<div class="caro">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+	<div class="view">
+		<img src="images/a.jpg" alt="">
+		<img src="images/b.png" alt="">
+		<img src="images/c.png" alt="">
+		<div class="prev">&lt;</div>
+		<div class="next">&gt;</div>
+		<div class="caro">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+	<div class="view">
+		<img src="images/a.jpg" alt="">
+		<img src="images/b.png" alt="">
+		<img src="images/c.png" alt="">
+		<div class="prev">&lt;</div>
+		<div class="next">&gt;</div>
+		<div class="caro">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+	<div class="view">
+		<img src="images/a.jpg" alt="">
+		<img src="images/b.png" alt="">
+		<img src="images/c.png" alt="">
+		<div class="prev">&lt;</div>
+		<div class="next">&gt;</div>
+		<div class="caro">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+	<div class="view">
+		<img src="images/a.jpg" alt="">
+		<img src="images/b.png" alt="">
+		<img src="images/c.png" alt="">
+		<div class="prev">&lt;</div>
+		<div class="next">&gt;</div>
+		<div class="caro">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+	<div class="view">
+		<img src="images/a.jpg" alt="">
+		<img src="images/b.png" alt="">
+		<img src="images/c.png" alt="">
+		<div class="prev">&lt;</div>
+		<div class="next">&gt;</div>
+		<div class="caro">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+	<div class="view">
+		<img src="images/a.jpg" alt="">
+		<img src="images/b.png" alt="">
+		<img src="images/c.png" alt="">
+		<div class="prev">&lt;</div>
+		<div class="next">&gt;</div>
+		<div class="caro">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+</body>
+<script src="jquery-1.8.3.js"></script>
+<script>
+	var view=document.getElementsByClassName('view')
+	
+	
+	console.log($(".view:eq(0) img"))
+
+	function Slide(ele,a){
+		
+		this.ele=ele;
+		this.imgs=ele.getElementsByTagName('img');
+		this.prev=ele.getElementsByClassName('prev')[0];
+		this.next=ele.getElementsByClassName('next')[0];
+		this.caro=ele.getElementsByClassName('caro')[0]
+		this.span=ele.getElementsByClassName('caro')[0].children;
+
+		
+		this.x=0;
+		this.imgs[this.x].style.display="block";
+		this.span[this.x].style.background="rgba(255,255,255,0.6)";
+
+		var self=this;
+		var flag=true;
+
+		this.next.onclick=function(){
+
+			if(flag){
+
+				flag=false;
+				$(".view:eq("+a+") img:eq("+self.x+")").fadeOut(300);
+
+				self.span[self.x].style.background="rgba(36, 34, 34, 0.5)"
+				self.x++;
+				if(self.x>self.imgs.length-1){
+					self.x=0
+				}
+				$(".view:eq("+a+") img:eq("+self.x+")").fadeIn(300,function(){
+					flag=true;
+				});
+				self.span[self.x].style.background="rgba(255,255,255,0.6)"
+
+			}
+
+		}
+
+		this.prev.onclick=function(){
+
+			if(flag){
+				
+				flag=false;
+				$(".view:eq("+a+") img:eq("+self.x+")").fadeOut(300);
+
+				self.span[self.x].style.background="rgba(36, 34, 34, 0.5)"
+				self.x--;
+				if(self.x<0){
+					self.x=self.imgs.length-1;
+				}
+				$(".view:eq("+a+") img:eq("+self.x+")").fadeIn(300,function(){
+					flag=true;
+				});
+				self.span[self.x].style.background="rgba(255,255,255,0.6)"
+
+			}
+			
+		}
+		
+		for(var i=0;i<self.span.length;i++){
+				self.span[i].index=i;
+			}
+
+		var timer=setInterval(function(){
+
+			$(".view:eq("+a+") img:eq("+self.x+")").fadeOut(1800);
+			self.span[self.x].style.background="rgba(36, 34, 34, 0.5)"
+			self.x++;
+			if(self.x>self.imgs.length-1){
+				self.x=0
+			}
+			$(".view:eq("+a+") img:eq("+self.x+")").fadeIn(1800);
+			self.span[self.x].style.background="rgba(255,255,255,0.6)"
+
+		},2500)
+		
+		this.ele.onmouseover=function(e){
+
+			clearInterval(timer)
+			if(e.target.index==self.x){
+				return
+			}	
+			if(e.target.nodeName=="SPAN"){
+				
+				if(flag){
+
+					flag=false;
+					$(".view:eq("+a+") img:eq("+self.x+")").fadeOut(300);
+					self.span[self.x].style.background="rgba(36, 34, 34, 0.5)";
+					self.x=e.target.index;
+					$(".view:eq("+a+") img:eq("+self.x+")").fadeIn(300,function(){
+						flag=true;
+					});
+					self.span[self.x].style.background="rgba(255,255,255,0.6)";
+
+				}
+
+			}
+
+		}
+
+		this.ele.onmouseout=function(){
+
+			timer=setInterval(function(){
+
+				$(".view:eq("+a+") img:eq("+self.x+")").fadeOut(1800);
+				self.span[self.x].style.background="rgba(36, 34, 34, 0.5)"
+				self.x++;
+				if(self.x>self.imgs.length-1){
+					self.x=0
+				}
+				$(".view:eq("+a+") img:eq("+self.x+")").fadeIn(1800);
+				self.span[self.x].style.background="rgba(255,255,255,0.6)"
+
+			},2500)
+
+		}
+
+	}
+
+	new Slide(view[0],0);
+	new Slide(view[1],1);
+	new Slide(view[2],2);
+	new Slide(view[3],3);
+	new Slide(view[4],4);
+	new Slide(view[5],5);
+	new Slide(view[6],6);
+	new Slide(view[7],7);
+	new Slide(view[8],8);
+	new Slide(view[9],9);
+
+</script>
+</html>
