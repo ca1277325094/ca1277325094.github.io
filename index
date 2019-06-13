@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			background: #6e6e6e;
+		}
+		.view{
+			width: 600px;
+			height: 600px;
+			margin: 100px auto;
+			position: relative;
+			border-radius: 50%;
+		}
+		.box1,.box2{
+			width: 300px;
+			height: 600px;
+			float: left;
+			overflow: hidden;
+			position: relative;
+		}
+		.box1 div{
+			width: 600px;
+			height: 600px;
+			border-radius: 50%;
+			background: black;
+		}
+		.box2 div{
+			width: 600px;
+			height: 600px;
+			border-radius: 50%;
+			background: #fff;
+			position: absolute;
+			left: -300px;
+		}
+		.r_w,.r_b{
+			position: absolute;
+			width: 300px;
+			height: 300px;
+			border-radius: 50%;
+			top: 0;
+			left: 50%;
+			transform: translate(-50%);
+		}
+		.r_w{
+			background: #fff;
+			top: 50%;
+		}
+		.r_b{
+			background: black;
+		}
+		.r_w::after{
+			content:"";
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			background: black;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			animation: myanib 6s infinite linear;
+			transform: translate(-50%);
+		}
+		.r_b::after{
+			content:"";
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			background: #fff;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			animation: myaniw 6s infinite linear;
+			transform: translate(-50%);
+		}
+		.view{
+			animation: myani 6s infinite linear;
+		}
+		@keyframes myani{
+			from{
+				transform: rotate(0deg);
+			}
+			50%{
+				box-shadow: 0 0 100px 50px rgb(1, 172, 251);
+			}
+			to{
+				transform: rotate(360deg);
+			}
+		}
+		@keyframes myaniw{
+			from{
+				transform: rotate(0deg);
+			}
+			50%{
+				box-shadow: 0 0 50px 20px rgb(1, 172, 251);
+			}
+			to{
+				transform: rotate(360deg);
+			}
+		}
+		@keyframes myanib{
+			from{
+				transform: rotate(0deg);
+			}
+			50%{
+				box-shadow: 0 0 50px 20px rgb(1, 172, 251);
+			}
+			to{
+				transform: rotate(360deg);
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="view">
+		<div class="box1">
+			<div></div>
+		</div>
+		<div class="box2">
+			<div></div>
+		</div>
+		<div class="r_w"></div>
+		<div class="r_b"></div>
+	</div>
+</body>
+</html>
