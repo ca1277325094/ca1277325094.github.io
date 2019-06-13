@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		a{
+			display: block;
+			width: 50vw;
+			height: 50vh;
+			margin: 10px auto;
+		}
+		.box1{
+			width: 50vw;
+			height: 50vh;
+			font-size: 5vw;
+			line-height: 50vh;
+			text-align: center;
+			background: gold;
+		}
+	</style>
+</head>
+<body>
+	<a href="tel:13526853274">
+		<div class="box1">打电话</div>
+	</a>
+	<a href="sms:18203722862?body=message_body">
+		<div class="box1">发短信</div>
+	</a>
+	<a href="mailto:1277325094@qq.com?subject=excerise">
+		<div class="box1">发邮件</div>
+	</a>
+</body>
+</html>
