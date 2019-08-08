@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #box{
+            width: 780px;
+            height: 640px;
+            background: #ffffff;
+            margin: 100px auto;
+            padding: 20px;
+            border: 3px solid #ffffff;
+        }
+        #view{
+            width: 640px;
+            height: 640px;
+            display: block;
+            box-sizing: border-box;
+            border: 1px solid #dedede;
+        }
+        #box .exhs{
+            width: 110px;
+            height: 640px;
+            float: right;
+            margin-top: -640px;
+        }
+        .exh{
+            width: 110px;
+            height: 110px;
+            margin: 9.16px 0;
+            width: 100%;
+            box-sizing: border-box;
+            cursor: pointer;
+            
+        }
+        .exhs .exh:first-child{
+            margin-top: 0;
+        }
+        .exhs .exh:last-child{
+            margin-bottom: 0;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="box">
+        <img id="view" src="images/a.jpg" alt=""></img>
+        <div class="exhs">
+            <img src="images/a.jpg" alt="" class="exh">
+            <img src="images/b.jpg" alt="" class="exh">
+            <img src="images/c.jpg" alt="" class="exh">
+            <img src="images/d.jpg" alt="" class="exh">
+            <img src="images/e.jpg" alt="" class="exh">
+        </div>
+    </div>
+</body>
+<script>
+    var view=document.getElementById('view')
+    var img=document.getElementById('box').getElementsByTagName('div')[0].getElementsByTagName('img');
+    var count=0;
+    img[0].style.border="1px solid purple"
+
+    for(var i=0;i<img.length;i++){
+
+        img[i].index=i;
+
+        img[i].onclick=function(){
+
+            img[count].style.border="none";
+            count=this.index;
+            img[count].style.border="1px solid purple";
+            view.src=img[count].src;
+
+        }
+
+    } 
+</script>
+</html>

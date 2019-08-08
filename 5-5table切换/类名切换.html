@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="a1"></div>
+</body>
+<script>
+    
+    var div=document.getElementsByTagName('div')[0]
+
+    function hasClass(ele,na){
+
+        if(ele.className){
+            arr=ele.className.split(" ")
+        }else{
+            return false
+        }
+        for(var i=0;i<arr.length;i++){
+            if(arr[i]==na){
+                return true;
+            }else{
+                return false;
+            }
+        }
+    }
+
+    function addClass(ele,na){
+        var arr=ele.className?ele.className.split(" "):[];
+        arr.push(na);
+        ele.className=arr.join(" ");
+    };
+
+    function removeClass(ele,na){
+        var arr=ele.className?ele.className.split(" "):[];
+
+        for(var i=0;i<arr.length;i++){
+            if(arr[i]==na){
+                arr.splice(i,1);
+                i--;
+            }
+        }
+        ele.className=arr.join(" ")
+    }
+
+    function switchClass(ele,na){
+
+        if(hasClass(ele,na)){
+            removeClass(ele,na)
+        }else{
+            addClass(ele,na)
+        }
+
+    }
+
+    
+    switchClass(div,"a3")
+    switchClass(div,"a1")
+</script>
+</html> 

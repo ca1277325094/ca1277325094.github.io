@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 1080px;
+            border: 2px solid rgb(0 0 0);
+            padding: 50px 50px;
+            overflow: hidden;
+            margin: 200px auto;
+        }
+        .box div{
+            width: 250px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            font-size: 17px;
+            float: left;
+            background: #dcdcdc;
+            color: #606060;
+            margin: 0 10px;
+            cursor: pointer;
+            position: relative;
+        }
+        .box div div{
+            width: 0;
+            height: 0;
+            background: none;
+        }
+        .box div .tri{
+            left: 100px;
+            width: 0;
+            height: 0;
+            border: 12px solid transparent;
+            position: absolute;
+            background: none;
+            border-top-color: #b3b3b3;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div>商城活动
+            <div></div>
+        </div>
+        <div>品牌活动
+            <div></div>
+        </div>
+        <div>海尔社区
+            <div></div>
+        </div>
+        <div>新浪微博
+             <div></div>
+        </div>
+    </div>
+</body>
+<script>
+    var div=document.getElementsByClassName('box')[0].getElementsByTagName('div');
+    console.log(div)
+    div[0].style.background="#b3b3b3";
+    div[0].style.color="#ffffff";
+    div[0].getElementsByTagName('div')[0].className=("tri");
+    var count=0;
+
+    for(var i=0;i<div.length;i++){
+
+        div[i].index=i;
+
+        div[i].onclick=function(){
+            div[count].getElementsByTagName('div')[0].className=("");
+            div[count].style.background="#dcdcdc";
+            div[count].style.color="#606060";
+            count=this.index;
+            this.style.background="#b3b3b3";
+            this.style.color="#ffffff";
+            this.getElementsByTagName('div')[0].className=("tri");
+
+
+        }
+    }
+</script>
+</html>
