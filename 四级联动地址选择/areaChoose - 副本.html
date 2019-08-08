@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>choosArea</title>
+    <script src="area.js"></script>
+    <style>
+        .box{
+            height: 50px;
+            margin: 10px 10px;
+            border: 2px solid black;
+            padding: 0px 15px;
+            line-height: 50px;
+            word-spacing: 10px;
+            background: #ebebeb;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <select name="" id="province"></select>
+        <select name="" id="city"></select>
+        <select name="" id="district"></select>
+        <select name="" id="street"></select>
+    </div>
+</body>
+<script>
+    var province=document.getElementById('province');
+    var city=document.getElementById('city');
+    var district=document.getElementById('district');
+    var street=document.getElementById('street');
+
+    for(var x in area){
+
+        var pro_option=document.createElement('option');
+        pro_option.innerHTML=x;
+        province.appendChild(pro_option);
+
+    }
+
+    function updataCity(){
+
+        city.innerHTML="";
+
+        for(var x in area[province.value][0]){
+
+                var city_option=document.createElement('option');
+                city_option.innerHTML=x;
+                city.appendChild(city_option);
+
+            }
+
+    }
+
+    function updataDistrict(){
+
+        district.innerHTML="";
+
+        for(var i=0;i<area[province.value][0][city.value].length;i++){
+            
+            for(var x in area[province.value][0][city.value][i]){
+
+                var district_option=document.createElement('option');
+                district_option.innerHTML=x;
+                district.appendChild(district_option);
+
+            }
+
+        }
+
+    }
+
+    function updataStreet(){
+
+        street.innerHTML="";
+
+        for(var x in area[province.value][0][city.value][district.selectedIndex]){
+            streets=area[province.value][0][city.value][district.selectedIndex][x].split("、");
+        }
+        for(var j=0;j<streets.length;j++){
+
+            var street_option=document.createElement('option');
+            street_option.innerHTML=streets[j];
+            street.appendChild(street_option);
+
+        }
+
+    }
+
+    updataCity();
+    updataDistrict();
+    updataStreet();
+
+    province.onchange=function(){
+
+        updataCity();
+        updataDistrict();
+        updataStreet();
+        f();
+
+    }
+
+    city.onchange=function(){
+
+        updataDistrict();
+        updataStreet();
+        f();
+
+    }
+
+    district.onchange=function(){
+
+        updataStreet();
+        f();  
+
+    }
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+        function getStyle(ele){
+
+            if(ele.currentStyle){
+
+                return ele.currentStyle;
+
+            }else{
+
+                return getComputedStyle(ele,null);
+
+            }
+
+        }
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+        function f(){
+
+            var w1=getStyle(province).width;
+            var w2=getStyle(city).width;
+            var w3=getStyle(district).width;
+            var w4=getStyle(street).width;
+            var total=parseInt(w1)+parseInt(w2)+parseInt(w3)+parseInt(w4);
+            var box=document.getElementsByClassName('box')[0];
+
+            box.style.width=(total+48)+"px";
+
+        }
+
+        f();
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+    //
+</script>
+</html>

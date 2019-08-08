@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #view{
+            width: 640px;
+            height: 360px;
+            border: 2px solid gold;
+            position: relative;
+        }
+        #normal{
+            width: 100%;
+        }
+        #magnify{
+            position: absolute;
+            top: -2px;
+            left: 664px;
+            width: 600px;
+            height: 600px;
+            border: 2px solid rgba(249, 253, 4);
+            overflow: hidden;
+            display: none;
+        }
+        #magnify img{
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        #magnified_area{
+            width: 198px;
+            height: 198px;
+            border: 2px solid gold;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: rgba(248, 182, 2, 0.3);
+            display: none;
+        }
+        #list{
+            margin-top: 10px;
+            width: 644px;
+        }
+        #list img{
+            width: 150px;
+            height: 84.375px;
+            margin-right: 9.85px; 
+            box-sizing: border-box;
+            background: rgb(124, 6, 153);
+        }
+        #list img:last-child{
+            margin-right: 0;
+        }
+        #across{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 200px;
+            height: 98px;
+            border-bottom: 6px dashed rgba(255, 238, 2, 0.5);
+
+        }
+        #vertical{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 98px;
+            height: 200px;
+            border-right: 6px dashed rgba(255, 238, 2, 0.5);
+
+        }
+    </style>
+</head>
+<body>
+    <div id="view">
+        <img src="image/a.jpg" alt="" id="normal">
+        <div id="magnify">
+            <img src="image/a.jpg" alt="">
+        </div>
+        <div id="magnified_area">
+            <div id="across"></div>
+            <div id="vertical"></div>
+        </div>
+    </div>
+    <div id="list">
+        <img src="image/a.jpg" alt="">
+        <img src="image/b.jpg" alt="">
+        <img src="image/d.jpg" alt="">
+        <img src="image/e.jpg" alt="">
+    </div>
+</body>
+<script>
+    var myimg=document.getElementById('list').getElementsByTagName('img');
+    var view=document.getElementById('view');
+    var normal=document.getElementById('normal');
+    var magnify=document.getElementById('magnify');
+    var magnified_area=document.getElementById('magnified_area')
+    
+    myimg[0].style.border="2px solid gold";
+    var count=0;
+    
+    for(var i=0;i<myimg.length;i++){
+
+        myimg[i].index=i;
+        
+        myimg[i].onclick=function(){
+            
+            myimg[count].style.border="none";
+            normal.src=this.src;
+            magnify.children[0].src=this.src;
+            this.style.border="2px solid gold";
+            count=this.index;
+            
+            if(normal.src==myimg[3].src){
+
+                this.style.border="2px solid rgb(124, 6, 153)";
+                across.style.borderBottomColor="rgb(124, 6, 153,0.5)";
+                vertical.style.borderRightColor="rgb(124, 6, 153,0.5)";
+                magnified_area.style.borderColor="rgb(124, 6, 153)";
+                magnified_area.style.background="rgba(124, 6, 153,0.3)";
+
+            }else{
+
+                across.style.borderBottomColor="rgb(255, 238, 2,0.5)";
+                vertical.style.borderRightColor="rgb(255, 238, 2,0.5)";
+                magnified_area.style.borderColor="rgb(255, 238, 2)";
+                magnified_area.style.background="rgba(255, 238, 2,0.3)";
+
+
+            }
+            
+        }
+
+    }
+
+    view.onmousemove=function(ele){
+
+        var x=ele.clientX;
+        var y=ele.clientY;
+
+        if(x<100){
+            x=100
+        }else if(x>540){
+            x=540
+        }
+
+        if(y<100){
+            y=100
+        }else if(y>260){
+            y=260
+        }
+
+        magnified_area.style.left=x-100+"px";
+        magnified_area.style.top=y-100+"px";
+
+
+        magnify.children[0].style.left=-x*3+300+"px";
+        magnify.children[0].style.top=-y*3+300+"px";
+     
+    }
+
+    view.onmouseover=function(){
+
+        magnify.style.display="block";
+        magnified_area.style.display="block";
+
+    }
+
+    view.onmouseout=function(){
+
+        magnify.style.display="none";
+        magnified_area.style.display="none";
+
+    }
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+</script>
+</html>

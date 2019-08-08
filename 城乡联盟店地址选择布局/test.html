@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>城乡联盟店</title>
+    <script src="area.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+            font-family: "微软雅黑";
+        }
+        .head{
+            width: 100%;
+            background: #f5f5f5;
+        }
+        .header{
+            width: 1200px;
+            height: 40px;
+            margin: 0 auto;
+            line-height: 40px;
+        }
+        #adress{
+            width: 300px;
+        }
+        #city{
+            color: red;
+            margin: 0 10px;
+            font-size: 16px;
+        }
+        #district{
+            margin-right: 10px;
+            font-size: 12px;
+            color: rgb(42, 42, 42);
+        }
+        #switchs{
+            font-size: 10px;
+            color: rgb(42, 42, 42);
+            cursor: pointer;
+            font-size: 12px;
+
+        }
+        #switchs:hover{
+            color:red;
+        }
+        #coverview{
+            position: fixed;
+            width: 100%;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            background: rgb(0,0,0,0.5);
+            display: none;
+        }
+        .adressSelect{
+            width: 900px;
+            margin: 200px auto;
+            background: #ffffff;
+            position: relative;
+            border-radius: 10px;
+            padding-top: 20px;
+            padding-bottom: 40px;
+        }
+        .adressSelect .shutDown{
+            position: absolute;
+            top: -5px;
+            right: 10px;
+            font-size: 38px;
+            cursor: pointer;
+        }
+        .adressSelect .top{
+            color: #005fc5;
+            font-size: 20px;
+            padding-bottom: 10px;
+            width: 815px;
+            margin:20px auto;
+            border-bottom: 1px solid #cdcdcd;
+        }
+        .adressSelect .top p strong{
+            color: rgb(251, 7, 7);
+        }
+        #selectProvince,#selectCity,#selectDistrict{
+            width: 745px;
+            padding: 0 0 20px 110px;
+        }
+        #selectDistrict{
+            display: none;
+        }
+        #selectProvince h1,#selectCity h1,#selectDistrict h1{
+            position: absolute;
+            font-size: 18px;
+            color: #005fc5;
+            padding-top: 3px;
+            left: 45px;
+        }
+        #selectProvince span,#selectCity span,#selectDistrict span{
+            padding: 0 20px 0 0;
+            line-height: 30px;
+            color: #424242;
+            font-size: 14px;
+            cursor: pointer;
+            display: inline-block;
+        }
+        #sub{
+            width: 180px;
+            height: 36px;
+            font-size: 20px;
+            border-radius: 5px;
+            color: #fff;
+            background: #d70c19;
+            margin: 0 auto;
+            text-align: center;
+            line-height: 36px;
+            display: block;
+            cursor: pointer;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <div class="header">
+            <div id="address">
+                <span id="city">郑州市</span>
+                <span id="district">中原区</span>
+                <span id="switchs">[切换]</span>
+            </div>
+        </div>
+    </div>
+    <div id="coverview">
+        <div class="adressSelect">
+            <div class="shutDown">&times;</div>
+            <div class="top">
+                <p><strong>心</strong>善是根，<strong>善</strong>能养性；<strong>气</strong>顺可安，<strong>心</strong>平则静；<strong>尊</strong>师是方，<strong>重</strong>友是法；<strong>爱</strong>家爱国，<strong>一</strong>生平安！</p>
+            </div>
+            <div id="selectProvince">
+                <h1>省份：</h1>
+            </div>
+            <div id="selectCity">
+                <h1>市域：</h1>
+            </div>
+            <div id="selectDistrict">
+                <h1>县区：</h1>
+            </div>
+            <a id="sub">切换</a>
+        </div>
+    </div>
+</body>
+<script>
+    var selectProvince=document.getElementById('selectProvince');
+    var selectCity=document.getElementById('selectCity');
+    var selectDistrict=document.getElementById('selectDistrict');
+    var switchs=document.getElementById('switchs');
+    var selectProvinceSpan=selectProvince.getElementsByTagName('span');
+    var selectCitySpan=selectCity.getElementsByTagName('span');
+    var selectDistrictSpan=selectDistrict.getElementsByTagName('span');
+    var shutDown=document.getElementById('coverview').getElementsByClassName('adressSelect')[0].getElementsByClassName('shutDown')[0];
+    
+    var nowCity=city.innerHTML;
+    var nowDistrict=district.innerHTML;
+    var newDistrict="";newProvince="";newCity="";
+
+
+    for(var x in area){
+
+        var news=document.createElement('span');
+        news.innerHTML=x;
+        selectProvince.appendChild(news);
+    }
+
+    selectProvinceSpan[0].style.color="#005fc5";
+
+    var nowProvince=selectProvinceSpan[0].innerHTML;
+  
+    function updataCity(){
+
+        selectCity.innerHTML="";
+        var h1=document.createElement('h1');
+        h1.innerHTML="市域：";
+        selectCity.appendChild(h1)
+
+        for(var x in area[nowProvince][0]){
+
+            var news=document.createElement('span')
+            news.innerHTML=x;
+            selectCity.appendChild(news);   
+
+        }
+
+    }
+
+    function updataDistrict(){
+        
+        selectDistrict.innerHTML="";
+        var h1=document.createElement('h1');
+        h1.innerHTML="县区：";
+        selectDistrict.appendChild(h1);
+
+        for(var i=0;i<area[nowProvince][0][nowCity].length;i++){
+
+            for(var x in area[nowProvince][0][nowCity][i]){
+
+                news=document.createElement('span');
+                news.innerHTML=x;
+                selectDistrict.appendChild(news);
+
+            }
+
+        }
+
+    }
+
+    updataCity();
+    selectCitySpan[0].style.color="#005fc5";
+    updataDistrict();
+
+    switchs.onclick=function(){
+
+        coverview.style.display="block";
+           
+    }
+    
+    shutDown.onclick=function(){
+
+        coverview.style.display="none";
+
+    }
+
+    for(var i=0;i<selectProvinceSpan.length;i++){
+        
+        selectProvinceSpan[i].onclick=function(){
+
+            for(var j=1;j<this.parentNode.children.length;j++){
+
+                this.parentNode.children[j].style.color="black";
+                this.style.color="#005fc5";
+
+            }
+
+            selectDistrict.style.display="none";
+            sub.style.display="none";
+            
+            nowProvince=this.innerHTML;
+            updataCity();
+            nowCity=selectCitySpan[0].innerHTML;
+            updataDistrict();  
+            newProvince=this.innerHTML;
+
+            for(var i=0;i<selectCitySpan.length;i++){
+
+                selectCitySpan[i].onclick=function(e){
+
+                    for(var j=1;j<this.parentNode.children.length;j++){
+
+                        this.parentNode.children[j].style.color="black";
+                        this.style.color="#005fc5";
+
+                    }
+
+                    sub.style.display="none";
+                    selectDistrict.style.display="block";
+                    selectDistrict.style.display="block";
+                    nowCity=e.target.innerHTML;
+                    updataDistrict();
+
+                    if(this.innerHTML!=city.innerHTML){
+
+                        newCity=this.innerHTML;
+
+                    }
+
+                    for(var i=0;i<selectDistrictSpan.length;i++){
+
+                        selectDistrictSpan[i].onclick=function(){
+
+                            for(var j=1;j<this.parentNode.children.length;j++){
+
+                                this.parentNode.children[j].style.color="black";
+                                this.style.color="#005fc5";
+
+                            }
+
+                            sub.style.display="block";
+                            
+                            newDistrict=this.innerHTML;
+                            nowDistrict=this.innerHTML;
+                        }
+
+                    }
+                
+                }
+
+            }
+
+        }
+
+    }
+
+    for(var i=0;i<selectCitySpan.length;i++){
+
+        selectCitySpan[i].onclick=function(e){
+
+            selectDistrict.style.display="block";
+            sub.style.display="none";
+
+            for(var j=1;j<this.parentNode.children.length;j++){
+
+                this.parentNode.children[j].style.color="black";
+                this.style.color="#005fc5";
+
+            }
+
+            selectDistrict.style.display="block";
+            nowCity=e.target.innerHTML;
+            updataDistrict();
+
+            if(this.innerHTML!=city.innerHTML){
+
+                newCity=this.innerHTML;
+
+            }
+
+            for(var i=0;i<selectDistrictSpan.length;i++){
+                
+                selectDistrictSpan[i].onclick=function(){
+
+                    for(var j=1;j<this.parentNode.children.length;j++){
+
+                        this.parentNode.children[j].style.color="black";
+                        this.style.color="#005fc5";
+
+                    }
+
+                    sub.style.display="block";
+                    newDistrict=this.innerHTML;
+                    nowDistrict=this.innerHTML;
+                }
+
+            }
+        
+        }
+
+    }
+
+    sub.onclick=function(){
+
+            city.innerHTML=newCity;
+            district.innerHTML=newDistrict;
+            coverview.style.display="none";
+            newCity="";
+            newDistrict="";
+
+    }
+</script>
+</html>

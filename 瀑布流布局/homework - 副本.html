@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="homework.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0; 
+        }
+        body{
+            background: rgb(215, 248, 215);
+        }
+        #view{
+            width:1280px;
+            border: 2px solid rgb(34, 87, 18);
+            position: relative;
+            margin: 10px auto;
+            animation: myan 5s linear 0s infinite normal; 
+        }
+        #view div{
+            width: 236px;
+            background: #ffffff;
+            padding-bottom: 10px;
+            position: absolute;
+            cursor: pointer;
+            box-shadow: 3px 3px 10px 1px #022f0afd;
+        }
+        #view div img{
+            display: block;
+            margin-bottom: 10px;
+        }
+        #view div p{
+            font-family: "微软雅黑";
+            font-weight: 550;
+            color: rgb(3, 70, 3);
+            margin: 0 20px; 
+        }
+        @keyframes myan{
+            0%{background:rgb(215, 248, 215);}
+            50%{background: #4ef63ff3};
+            100%{background:rgb(215, 248, 215);}
+        }
+    </style>
+</head>
+<body>
+    <div id="view"> </div>
+</body>
+<script>
+    var view=document.getElementById('view');
+    var arr=[{column:1,h:0},{column:2,h:0},{column:3,h:0},{column:4,h:0},{column:5,h:0}]
+
+    function getStyle(ele){
+        if(ele.currentStyle){
+            return ele.currentStyle;
+        }else{
+            return getComputedStyle(ele,null);
+        }
+    }
+
+    for(var i=0;i<data.length;i++){
+
+        arr.sort(function(a,b){
+            if(a.h>b.h){
+                return 1;
+            }else{
+                return -1
+            }
+        })
+
+        var div=document.createElement('div');
+        var img=document.createElement('img');
+        var p=document.createElement('p');
+        img.src=data[i].img_url;
+        p.innerHTML=data[i].title;
+
+        div.style.left=((arr[0].column-1)*251+20)+"px";
+        div.style.top=(arr[0].h+15)+"px";
+
+        div.appendChild(img);
+        div.appendChild(p);
+        view.appendChild(div);
+        
+        arr[0].h+=Number(data[i].img_url.split("?")[1].split("x")[1])+parseInt(getStyle(p).height)+35;
+    }
+
+    view.style.height=(arr[arr.length-1].h+15)+"px";
+
+
+
+</script>
+</html>
