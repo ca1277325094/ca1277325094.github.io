@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="data.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #box{
+            width: 1020px;
+            margin:10px auto;
+            background-color: green;
+            padding: 10px;
+            
+            overflow: hidden;
+        }
+        #box div{
+            background: url('lazyload.gif') no-repeat center center;
+            margin:10px;
+            float: left;
+            width: 235px;
+            height: 297px;
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+</body>
+<script>
+    
+    for(var i=0;i<data.length;i++){
+
+        var news=document.createElement('img');
+        var mydiv=document.createElement('div');
+
+        mydiv.className=data[i]['imgUrl'];
+        news.title=data[i]['title'];
+        mydiv.appendChild(news);
+        box.appendChild(mydiv);
+
+
+        var scrollTop=document.documentElement.scrollTop;
+        var h=window.innerHeight;
+        var offsetTop=mydiv.offsetTop;
+                
+        if(offsetTop<scrollTop+h){
+                    
+            news.src=mydiv.className;
+            
+        }
+
+    }
+    var alldiv=box.getElementsByTagName('div')
+    
+    window.onscroll=function(){
+
+        for(var j=0;j<alldiv.length;j++){
+
+            var scrollTop=document.documentElement.scrollTop;
+            var h=window.innerHeight;
+            var offsetTop=alldiv[j].offsetTop;
+            
+            if(offsetTop<scrollTop+h-300){
+                
+                alldiv[j].children[0].src=alldiv[j].className;
+
+            }
+        }
+
+    }
+    
+</script>
+</html>

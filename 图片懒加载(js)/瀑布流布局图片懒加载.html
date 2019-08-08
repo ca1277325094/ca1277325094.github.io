@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="homework.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #box{
+            width: 1300px;
+            position: relative;
+            margin: 0 auto;
+            border: 4px solid #dedede;
+            background: rgb(206, 209, 37);
+        }
+        #box div{
+            width: 236px;
+            position: absolute;
+            border: 1px solid green;
+            background: url("lazyload.gif") no-repeat center center;
+            background-color:  #ffffff;
+        
+        }
+        #box img{
+            display: block;
+        }
+        #box p{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+</body>
+<script>
+    var arr=[{column:1,h:0},{column:2,h:0},{column:3,h:0},{column:4,h:0},{column:5,h:0},]
+
+    function getStyle(ele){
+        if(ele.currentStyle){
+            return ele.currentStyle
+        }else{
+            return getComputedStyle(ele,null);
+        }
+    }
+    for(var i=0;i<data.length;i++){
+
+        arr.sort(function(a,b){
+            if(a.h>b.h){
+                return 1;
+            }else{
+                return -1;
+            }
+        })
+        var mydiv=document.createElement('div');
+        var myimg=document.createElement('img');
+        var myp=document.createElement('p');
+
+        myimg.setAttribute('mysrc',data[i].img_url);
+        myp.innerHTML=data[i].title;
+        mydiv.appendChild(myimg);
+        mydiv.appendChild(myp);
+        box.appendChild(mydiv);
+        mydiv.style.left=(arr[0].column-1)*256+20+"px";
+        mydiv.style.top=arr[0].h+20+"px";
+        mydiv.style.height=parseInt(getStyle(myp).height)+Number(data[i].img_url.split("?")[1].split("x")[1])+20+"px";
+        myimg.style.height=Number(data[i].img_url.split("?")[1].split("x")[1])+"px";
+        arr[0].h+=parseInt(getStyle(myp).height)+Number(data[i].img_url.split("?")[1].split("x")[1])+40;
+        
+        var scrollTop=document.documentElement.scrollTop||document.body.scrollTop
+        var h=window.innerHeight;
+        var offsetTop=mydiv.offsetTop;
+
+        if(offsetTop<scrollTop+h){
+            myimg.src=myimg.getAttribute('mysrc')
+        }
+
+    }
+    box.style.height=arr[arr.length-1].h+20+"px";
+    
+    var alldiv=box.getElementsByTagName('div');
+
+    window.onscroll=function(){
+        
+        for(var j=0;j<alldiv.length;j++){
+
+            var scrollTop=document.documentElement.scrollTop||document.body.scrollTop;
+            var h=window.innerHeight;
+            var offsetTop=alldiv[j].offsetTop;
+
+            if(offsetTop<scrollTop+h-300){
+
+                alldiv[j].children[0].src=alldiv[j].children[0].getAttribute('mysrc')
+            
+            }
+        }
+
+    }
+
+
+</script>
+</html>
