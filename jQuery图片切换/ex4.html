@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		#box{
+			width: 802px;
+			margin: 100px auto;
+			position: relative;
+		}
+		#view{
+			width: 800px;
+			height: 450px;
+			border: 1px solid #225555;
+			position: relative;
+			overflow: hidden;
+			border-radius: 15px;
+		}
+		#view div{
+			width: 800px;
+			height: 450px;
+			font-size: 50px;
+			text-align: center;
+			line-height: 200px;
+			position: absolute;
+			top: 0;
+			left: 810px;
+			background: rgb(0,255,12);
+		}
+		#btn button{
+			width: 50px;
+			height: 30px;
+			margin: 10px 10px;
+			background: #3d8d3b;
+			border: none;
+			border-radius: 6px;
+			outline: 0;
+		}
+		#btn button:first-child{
+			margin-left: 0;
+		}
+		#prve,#next{
+			position: absolute;
+			top: 186px;
+			width: 60px;
+			height: 80px;
+			color: white;
+			background: rgb(46, 48, 46,0.7);
+			border: none;
+			display: none;
+			outline: 0;
+		}
+		#prve{
+			left: 1px;
+			border-top-right-radius: 10px;
+			border-bottom-right-radius: 10px;
+		}
+		#next{
+			border-top-left-radius: 10px;
+			border-bottom-left-radius: 10px;
+			right: 1px;
+		}
+		#box:hover #prve{
+			display: block;
+		}
+		#box:hover #next{
+			display: block;
+		}
+		
+	</style>
+</head>
+<body>
+	<div id="box">
+		<div id="view">
+			<div><img src="images/a.jpg" alt=""></div>
+			<div><img src="images/b.jpg" alt=""></div>
+			<div><img src="images/c.jpg" alt=""></div>
+			<div><img src="images/d.jpg" alt=""></div>
+			<div><img src="images/e.jpg" alt=""></div>
+			<div><img src="images/f.jpg" alt=""></div>
+			<div><img src="images/g.jpg" alt=""></div>
+			<div><img src="images/h.jpg" alt=""></div>
+		</div>
+		<div id="btn"></div>
+		<button id="prve">上一张</button>
+		<button id="next">下一张</button>
+	</div>
+</body>
+<script src="jquery-1.8.3.js"></script>
+<script>
+	var x=0;
+	var flag=true;
+
+	for(var i=0;i<$("#view").children().length;i++){
+		
+		$("<button>").html(i+1).appendTo($("#btn"))
+
+	}
+	$("#btn").children().eq(x).css({background:"red",color:"#ffffff"})
+
+	$("#view").children().eq(x).css("left",0);
+	
+	$("#btn").children().click(function(){
+		if(flag){
+
+			flag=false;
+			var index=$(this).index();
+			$("#btn").children().eq(x).css({background:"#3d8d3b",color:"black"})
+			$(this).css({background:"red",color:"#ffffff"})
+			if(index>x){
+
+				$("#view").children().eq(index).css("left",800);
+				$("#view").children().eq(x).animate({left:-800},500)
+				$("#view").children().eq(index).animate({left:0},500,function(){
+					flag=true;
+				})
+				x=index;
+
+			}else if(index<x){
+
+				$("#view").children().eq(index).css("left",-800);
+				$("#view").children().eq(x).animate({left:800},500)
+				$("#view").children().eq(index).animate({left:0},500,function(){
+					flag=true;
+				})
+				x=index;
+
+			}else{
+				flag=true;
+			}
+
+		}
+
+	})
+
+	$("#prve").click(function(){
+
+		if(flag){
+	
+			flag=false;			
+			if(x<1){
+				$("#btn").children().eq(x).css({background:"#3d8d3b",color:"black"})
+				$("#btn").children().last().css({background:"red",color:"#ffffff"})
+				$("#view").children().last().css("left",-800);
+				$("#view").children().eq(x).animate({left:800},500)
+				$("#view").children().last().animate({left:0},500,function(){
+					flag=true;
+				});
+				x=$("#view").children().length-1;
+
+			}else{
+				$("#btn").children().eq(x).css({background:"#3d8d3b",color:"black"})
+				$("#btn").children().eq(x-1).css({background:"red",color:"#ffffff"})
+				$("#view").children().eq(x-1).css("left",-800);
+				$("#view").children().eq(x).animate({left:800},500)
+				$("#view").children().eq(x-1).animate({left:0},500,function(){
+					flag=true;
+				});
+				x--;
+			}	
+
+		}
+
+	})
+	$("#next").click(function(){
+
+		if(flag){
+
+			flag=false;
+			if(x>$("#view").children().length-2){
+				$("#btn").children().eq(x).css({background:"#3d8d3b",color:"black"})
+				$("#btn").children().first().css({background:"red",color:"#ffffff"})
+				$("#view").children().first().css("left",800);
+				$("#view").children().eq(x).animate({left:-800},500)
+				$("#view").children().first().animate({left:0},500,function(){
+					flag=true;
+				});
+				x=0;
+			}else{
+				$("#btn").children().eq(x).css({background:"#3d8d3b",color:"black"})
+				$("#btn").children().eq(x+1).css({background:"red",color:"#ffffff"})
+				$("#view").children().eq(x+1).css("left",800);
+				$("#view").children().eq(x).animate({left:-800},500)
+				$("#view").children().eq(x+1).animate({left:0},500,function(){
+					flag=true;
+				});
+				x++;
+			}
+
+		}
+
+	})
+</script>
+
+</html>
