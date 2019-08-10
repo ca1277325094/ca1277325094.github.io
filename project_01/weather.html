@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="ajax.js"></script>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+		}
+		li{
+			list-style: none
+		}
+		#list{
+			text-align: center;
+			width:450px;
+			border-right:#ececec 1px solid;
+			overflow: hidden;
+			margin:50px auto;
+			background: rgb(23,111,192);
+			color:#dedede;
+			border-radius: 10px;
+		}
+		#list li{
+			border-left:#ececec 1px solid;
+			width:89px;
+			float:left;
+			padding:10px 0;
+		}
+		
+		#list h4{
+			text-align: center;
+		    font-size: 12px;
+		    text-shadow: 1px 1px 1px #555;
+		    line-height: 1em;
+		}
+		.riqi{
+			margin-top: 8px;
+			filter: alpha(opacity=50);
+			opacity: 0.5;
+			text-shadow: none;
+			font-size:12px;
+		}
+		.wendu{
+			text-align: center;
+		    font-size: 12px;
+		    text-shadow: 1px 1px 1px #555;
+		    line-height: 1em;
+		    margin-top: 22px;
+		}
+		.tanqi{
+			text-align: center;
+		    font-size: 12px;
+		    text-shadow: 1px 1px 1px #555;
+		    line-height: 1em;
+		}
+		.feng{
+			text-align: center;
+			font-size: 12px;
+			text-shadow: 1px 1px 1px #555;
+			line-height: 1em;
+		}
+		p{
+			padding: 5px 0
+		}
+		.iptbox{
+			text-align: center
+		}
+		#title{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<p class="iptbox">
+		<input type="text" id="ipt" value="北京">
+		<button id="search">查看</button>
+	</p>
+	<h1 id="title"><span>北京</span>近五天天气情况</h1>
+	<ul id="list"></ul>
+</body>
+<script>
+		
+	function render(){
+		ajax({
+			url:"http://wthrcdn.etouch.cn/weather_mini",
+			query:{
+				city:ipt.value
+			},
+			success:function(res){
+				res=JSON.parse(res);
+
+				var html="";
+
+				var arr=res.data.forecast;
+
+				for(var i=0;i<arr.length;i++){
+
+					var day=/星期./.exec(arr[i].date);
+
+					var month=new Date().getMonth()+1;
+
+					month=month<10?"0"+month:month;
+
+					var date=month+"月"+/(^.*)星期/.exec(arr[i].date)[1];
+
+					var low=/\s(.*$)/.exec(arr[i].low)[1];
+
+					var high=/\s(.*$)/.exec(arr[i].high)[1]
+
+					var fengji=/A\[(.*)\]\]/.exec(arr[i].fengli)[1];
+
+					html+=`<li>
+								<h4>${day}</h4>
+								<p class="riqi">${date}</p>
+								<p class="wendu">${low}~${high}</p>
+								<p class="tianqi">${arr[i].type}</p>
+								<p class="feng">${arr[i].fengxiang}${fengji}</p>
+							</li>`
+
+				}
+
+				list.innerHTML=html;
+
+				console.log(arr=res.data.forecast)
+
+			}
+		})
+
+	}
+	
+	render();
+
+	search.onclick=function(){
+
+		title.children[0].innerHTML=ipt.value
+
+		render();
+	}
+
+
+
+	// url:http://wthrcdn.etouch.cn/weather_mini
+	// 参数： city
+	// 方式：get
+</script>
+</html>
