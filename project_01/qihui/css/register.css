@@ -1,0 +1,157 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none
+}
+/*中间*/
+#log_main{
+	width: 100%;
+	height: 580px;
+	margin-top: 10px;
+	background:#3d82e1;
+}
+#log_bg{
+	width: 1200px;
+	height: 580px;
+	margin: 0 auto;
+	background:url(../images/bg.jpg);
+	position: relative;
+}
+#log_bg_form{
+	width: 330px;
+	padding:0 30px;
+	background:white;
+	position: absolute;
+	top:90px;
+	right: 0
+}
+#log_dl{
+	font-size: 18px;
+	padding: 33px 0 0 0;
+}
+#log_txt{
+	font-size: 12px;
+	color: #ff0000;
+	padding:9px 0;
+	height: 18px;
+	width: 328px;
+}
+.log_ipt{
+	width: 328px;
+	height: 42px;
+	outline: none;
+	border:1px solid #e3e3e3;
+	text-indent: 56px;
+	margin-bottom: 15px
+}
+#log_tel{
+	background:url(../images/denglu_03.png) no-repeat;
+}
+#log_pwd{
+	background:url(../images/denglu_06.png) no-repeat;	
+}
+/*操作*/
+#wjmm_jzmm input{
+	width: 13px;
+	height: 13px;
+	margin-right: 9px
+}
+#wjmm p{
+	display: inline-block;
+}
+#wjmm_jzmm{
+	font-size: 12px;
+	margin-bottom: 22px
+}
+#wjmm_wjmm{
+	font-size: 12px;
+	float: right;
+}
+#wjmm_wjmm a{
+	color:#4d4d4d;
+}
+#wjmm_wjmm a:hover{
+	color:#e02445
+}
+#wjmm_wjmm span{
+	margin: 0 7px
+}
+#log_dltj{
+	width: 330px;
+	height: 42px;
+	border-radius: 2px;
+	border:none;
+	background:#e02445;
+	color:white;
+	outline: none;
+	font-size: 15px;
+	font-weight: bolder;
+}
+#huiyuan{
+	width: 330px;
+	font-size:12px;
+	padding: 24px 0 29px 0;
+	text-align: right
+}
+#huiyuan a{
+	color: #888888;
+}
+#huiyuan a:hover{
+	color: #e02445
+}
+/*登录底部*/
+#log_bottom{
+	width: 1200px;
+	margin:0 auto;
+	margin-top: 46px;
+	overflow: hidden;
+}
+#log_bottom_left{
+	float: left;
+}
+#log_bottom_one{
+	overflow: hidden;
+}
+#log_bottom_one li{
+	float: left;
+}
+#log_bottom_one li a{
+	font-size:12px;
+	color: #666666
+}
+#log_bottom_one li span{
+	font-size:12px;
+	color: #666666;
+	margin: 0 19px 0 15px
+}
+#log_bottom_two{
+	font-size: 12px;
+	color: #999999;
+	margin: 14px 0 40px 0;
+	overflow: hidden;
+}
+#log_bottom_two p{
+	float: left;
+	margin-right: 5px
+}
+#log_bottom_two p span{
+	color: #333333
+}
+#log_bottom_three{
+	margin-bottom: 40px
+}
+#log_bottom_right{
+	width: 96px;
+	height: 120px;
+	border-left: 1px solid #e7e7e7;
+	padding-left:54px;
+	float: right;
+}
+#log_bottom_right p{
+	font-size: 12px;
+	color: #333333;
+	padding-top: 9px
+}
+#log_bottom_right img{
+	margin-top: 15px
+}

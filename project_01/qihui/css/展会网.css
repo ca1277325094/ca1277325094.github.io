@@ -1,0 +1,822 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+.p_show{
+    width: 100%;
+    background: #f6f6f6;
+   height: 130px;
+}
+.p_zhong{
+    width: 1200px;
+    margin: 0 auto;
+    height: 130px;
+}
+.p_show_zuo{
+   width: 230px;
+   height: 109px;
+   float: left;
+   margin-top: 10px;
+   background: url(http://v2.qihuiwang.com/images/logo.jpg) no-repeat scroll 1px 0;
+  
+}
+.p_show_zuo1{
+    background: url(http://v2.qihuiwang.com/images/logo-font.jpg) no-repeat -1px 0;
+    width: 230px;
+    height: 109px;
+    float: left;
+    margin-top: 10px;
+}
+.p_show_zuo>a{
+    width: 335px;
+    height: 109px;
+    display:block;
+    
+}
+.p_show_you{
+    float: right;
+    width: 680px;
+    height: 113px;
+    margin-top: 18px;
+    
+}
+.p_you_ziti{
+    width: 550px;
+    float: left;
+}
+.p_you_ziti>span{
+    font-size: 12px;
+    width:50px;
+    height: 26px;
+    display: inline-block;
+    text-align: center;
+    line-height: 26px;
+}
+.p_you_ziti>span:hover{
+    color: #db2242;
+    text-decoration: underline;
+}
+.p_you_ziti>p{
+    float: right;
+    margin-right: 6px;
+}
+.p_sou{
+    margin-top: 2px;
+    width: 550px;
+    height: 41px;
+    float: left;
+}
+.p_sou>input{
+    width:450px;
+    height: 37px;
+    float: left;
+    border: 2px solid #dfdfdf;
+    background: #fff;
+}
+.p_sou>div{
+    width: 94px;
+    height: 41px;
+    background-color: #db2242;
+    float: left;
+    cursor: pointer;
+    text-align: center;
+    ;line-height: 41px;
+    color: #fff;
+    font-size: 16px;
+
+}
+
+.p_saoma{
+    width: 80px;
+    height: 90px;
+    margin-top: -35px;
+    float: right;
+}
+.p_saoma>p{
+    font-size: 12px;
+}
+.p_saoma>p:last-child{
+    width: 70px;
+height: 70px;
+background: url(http://zhengzhou.qihuiwang.com/Theme/ZZ/images/ico.png) no-repeat -208px 0;
+}
+.p_sty{
+    height: 39px;
+    width: 100%;
+    /* border-bottom:2px solid #1c2124; */
+    background: #db2242;
+}
+.p_sty1{
+width: 1200px;
+margin: 0 auto;
+}
+.p_sty1_zuo{
+/* width: 600px; */
+height: 40px;
+float: left;
+}
+.p_xiang{
+width: 185px;
+height: 38px;
+float: left;
+background: #c8203e;
+padding-left: 15px;
+line-height: 38px;
+color: #fff;
+}
+.p_xiang>i{
+width: 18px;
+height: 18px;
+display: inline-block;
+margin: 5px 10px 0 0;
+background: url(http://zhengzhou.qihuiwang.com/Theme/ZZ/images/ico.png) no-repeat -266px -231px;
+}
+.p_sty1_zuo>ul{
+float: left;
+height: 40px;
+margin-left: 20px;
+}
+.p_sty1_zuo>ul>li{
+float: left;
+width: 72px;
+height: 40px;
+margin-right: 10px;
+text-align: center;
+cursor: pointer;
+color: #fff;
+line-height: 40px;
+}
+
+.p_sty1_zuo>ul>li:hover{
+color: #ff9bac;
+}
+.p_sty1_you{
+width: 240px;
+height: 40px;
+float: right;
+}
+.p_sty1_you>ul{
+    width: 240px;
+    height: 40px;
+}
+.p_sty1_you li{
+float: left;
+height: 40px;
+line-height: 40px;
+margin-left: 17px;       
+cursor: pointer;
+font-size: 12px;
+color: #fff;
+}
+.p_sty1_you i{
+    background: url(http://v2.qihuiwang.com/images/ico.png) no-repeat 0px -531px;
+display: block;
+width: 2px;
+float: left;
+height: 30px;
+float: left;
+}
+.p_zhanhui{
+    background: url(http://v2.qihuiwang.com/images/ico.png) no-repeat -213px -189px;
+    color: #db2242 !important;
+}
+.p_kuku_1{
+    z-index: 99999;
+    width: 198px;
+    height: 450px;
+    border: 1px solid #dfdfdf;
+    background: #f5f5f5;
+    margin-left: -15px;
+    display: none;
+    position: relative;
+}
+
+.p_kuku_1>ul>li{
+    width: 198px;
+    height: 45px;
+   
+    line-height: 45px;
+    font-size: 14px;
+    margin-left: 7px;
+   
+}
+.p_kuku_1 i{
+    width: 7px;
+    height: 36px;
+    background: url(http://zhengzhou.qihuiwang.com/Theme/ZZ/images/ico.png) no-repeat;  
+    padding: 0 7px;
+    float: left;
+   
+  
+}
+.p_kuku_1>ul>li a{
+    color: #000000;
+   
+}
+.p_xiang:hover .p_kuku_1{
+    display: block;
+}
+.p_links{
+    width: 520px;
+height: 420px;
+border: 1px solid #dfdfdf;
+background: #fff;
+position: absolute;
+left: 199px;
+top: 1px;
+padding: 15px 15px 15px 20px;
+display: none;
+}
+.p_links0{
+    width: 500px;
+    height: 80px;
+    margin-top: 10px;
+    border-bottom: 1px #e5e5e5 solid;
+    float: left;
+ 
+}
+.p_links0 h4{
+    width: 80px;
+    width: 100%;
+    color: #1d7ad9;
+    font-size: 13px;
+    margin-left: 10px;
+    font-weight: 700;
+    height: 22px;
+    line-height: 22px;
+}
+.p_links0 li{
+    float: left;
+    font-size: 12px;
+    color: #666;
+    line-height: 25px;
+    margin-left: 10px;
+    
+}
+.p_nrong{
+    width: 1200px;
+    height: 590px;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+.p_nrong1{
+    float: left;
+    width: 200px;
+    height: 590px;
+}
+.p_nrong1_x{
+    width: 198px;
+    height: 256px;
+    border: 1px solid #dfdfdf;
+    border-bottom: 0;
+    
+}
+.p_nrong1_x>p{
+    height: 38px;
+line-height: 38px;
+background-color: #f5f5f5;
+border-bottom: 1px solid #dfdfdf;
+padding-left: 10px;
+font-size: 14px;
+}
+.p_nrong1_x>ul{
+    width: 178px;
+    height: 40px;
+    padding: 7px 10px;
+}
+.p_nrong1_li{
+    width: 10px;
+    font-size: 12px;
+    color: #db2242;
+    float: left;
+}
+.p_nrong1_lis{
+    width: 130px;
+height: 30px;
+padding-left: 15px;
+background: url(http://v2.qihuiwang.com/images/ico.png) no-repeat -317px -573px;
+float: left;
+font-size: 12px;
+margin-left: 23px;
+}
+.p_norong1_c{
+    width: 120px;
+height: 28px;
+line-height: 28px;
+padding-left: 80px;
+background-color: #db2242;
+color: #fff;
+font-size: 13px;
+}
+.p_nrong1_s{
+    width: 198px;
+    margin-top: 15px;
+    height: 275px;
+    border: 1px solid #dfdfdf;
+}
+.p_nrong1_s>p{
+    height: 38px;
+line-height: 38px;
+background-color: #f5f5f5;
+border-bottom: 1px solid #dfdfdf;
+padding-left: 10px;
+font-size: 14px;
+}
+.p_nrong1_s>img{
+    margin-left: 10px;
+    margin-top: 15px;
+}
+.p_nrong1_s>ul{
+    width: 182px;
+height: 130px;
+line-height: 26px;
+
+padding: 10px 8px;
+overflow: hidden;
+}
+.p_nrong1_s>ul>li{
+    background: url(http://v2.qihuiwang.com/images/ico.png) no-repeat -317px -532px;
+    color: #444;
+    line-height: 26px;
+    font-size: 12px;
+padding-left: 8px;
+}
+.p_nrong2{
+    width: 728px;
+    height: 575px;
+    float: left;
+    margin-left: 15px;
+    overflow: hidden;
+}
+.p_nrong2>ul{
+    width: 3000px;
+    height: 285px;
+  
+}
+.p_nrong2 li{
+    float: left;
+}
+.p_nrong2_ul2{
+    position: absolute;
+   left:625px;
+   top: 260px
+}
+.p_nrong2{
+    position: relative;
+}
+.p_nrong2_ul2>li{
+  width: 13px;
+  height: 13px;
+  float: left;
+  margin: 3px 4px;
+  border: 1px solid #fff;
+}
+.p_acction{
+    background: red;
+}
+.p_ink{
+    width: 726px;
+    height: 274px;
+    border: 1px solid #dfdfdf;
+    float: left;
+    margin-top: 11px;
+}
+.p_ink1{
+    width: 710px;
+    height: 38px;
+    margin: 0 8px;
+    border-bottom: 1px solid #eee;
+    line-height: 38px;
+}
+.p_ink1>p{
+    width: 100px;
+    background: url(http://v2.qihuiwang.com/images/ico.png) no-repeat -74px -503px;
+    padding-left: 10px;
+    font-size: 14px;
+    float: left;
+    font-weight: 400;
+}
+.p_ink1>span{
+    float: right;
+    font-size: 12px;
+    color: #444;
+}
+.p_pinks{
+    width: 700px;
+    height: 210px;
+    padding: 15px 10px 10px 15px;
+    float: left;
+}
+.p_youqi{
+    float: left;
+    width: 525px;
+    height: 105px;
+    margin-left: 10px;
+}
+.p_youqi>p{
+    width: 525px;
+    height: 20px;
+    font-size: 16px;
+    color: #db2242;
+    float: left;
+    margin-bottom: 13px;
+}
+.p_youqi>header{
+    font-size: 12px;
+    color: #666;
+    line-height: 25px;
+  display: inline-block;
+  cursor: pointer;
+}
+.p_youqi span{
+    color: #3d5590;
+    cursor: pointer;
+    font-size: 12px;
+  
+   
+}
+.p_youqi>header>a:hover{
+    color: #db2242;
+    text-decoration: underline;
+}
+.p_youqi>header>a{
+    color: #666;
+}
+.p_pinksNO{
+    width: 710px;
+    height: 80px;
+    margin-top: 20px;
+    float: left;
+}
+.p_pinksNO li{
+    width: 340px;
+    height: 26px;
+    line-height: 26px;
+    padding-left: 8px;
+    font-size: 12px;
+    float: left;
+    margin-left:7px;
+    background: url(http://v2.qihuiwang.com/images/ico.png) no-repeat -317px -530px;
+}
+.p_urli{
+    float: right;
+    width: 242px;
+    height: 573px;
+    
+}
+.p_urli_1{
+    width: 242px;
+    height: 46px;
+    border: 1px solid #dfdfdf;
+    border-right: 0;
+    line-height: 46px;
+    text-align: center;
+}
+.p_urli_1 span{
+    width: 110px;
+    border-right: 1px solid #dfdfdf;
+    background: url(http://v2.qihuiwang.com/images/ico.png) no-repeat 5px -592px;
+    padding-left: 22px;
+    font-size: 14px;
+    float: left;
+    color: #db2242;
+}
+
+.p_urli_1 span:last-child{
+    width: 88.2px;
+text-align: center;
+background: url(http://v2.qihuiwang.com/images/ico.png) no-repeat -18px -562px;
+padding-left: 19px;
+}
+.p_urli_2{
+    width: 240.4px;
+    height: 242px;
+    border: 1px solid #dfdfdf;
+    float: left;
+    margin-top: 15px;
+}
+.p_urli_2 p{
+    height: 38px;
+line-height: 38px;
+background-color: #f5f5f5;
+border-bottom: 1px solid #dfdfdf;
+padding-left: 10px;
+font-size: 14px;
+}
+.p_urli_3{
+    width: 218px;
+height: 182px;
+padding: 10px;
+line-height: 24px;
+}
+.p_urli_3 li{
+    line-height: 24px;
+    font-size: 13px;
+    color: #444;
+}
+.p_urli_4{
+   
+    height: 268px;
+    border: 1px solid #dfdfdf;
+width: 240.4px;;
+float: left;
+}
+.p_urli_4 p{
+    height: 38px;
+line-height: 38px;
+background-color: #f5f5f5;
+border-bottom: 1px solid #dfdfdf;
+padding-left: 10px;
+font-size: 14px;
+}
+.p_urli_4 ul{
+    width: 240px;
+    height: 230px;
+    padding:  20px 0  10px 13px;
+}
+.p_urli_4 ul li{
+    width: 227px;
+    height: 30px;
+    padding: 5px 0;
+    font-size: 12px;
+    color: #444;
+    line-height: 30px;
+}
+.p_urli_4 ul li input{
+    width: 148px;
+height: 26px;
+line-height: 26px;
+border: 1px solid #c9c9c9;
+border-radius: 2px;
+padding-left: 2px;
+}
+.p_liiii{
+    width: 152px !important;
+height: 30px;
+line-height: 30px;
+margin-left: 54px;
+text-align: center;
+background-color: #ff6200;
+border: none;
+cursor: pointer;
+padding: 0 !important;
+margin-top: 5px;
+color: #fff !important;
+font-size: 14px !important;
+}
+.p_zlu{
+    width: 1200px;
+    margin: 0 auto;
+   
+}
+.p_main{
+    width: 1200px;
+    height: 334px;
+   
+    margin: 10px auto;
+}
+.p_main1{
+    width: 941px;
+height: 334px;
+float: left;
+border: 1px solid #dfdfdf;
+}
+.p_main1>p{
+    height: 38px;
+    line-height: 38px;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #dfdfdf;
+    padding-left: 15px;
+    font-size: 14px;
+}
+.p_main1 li{
+    width: 213px;
+float: left;
+padding: 15px 4px 5px 15px;
+
+}
+.p_main1 span{
+    font-size: 13px;
+    color: #444;
+    width: 213px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    display: block;
+}
+.p_main2{
+    width: 240px;
+border: 1px solid #dfdfdf;
+float: right;
+height: 335px;
+}
+.p_main2>p{
+    height: 38px;
+    line-height: 38px;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #dfdfdf;
+    padding-left: 15px;
+    font-size: 14px;
+}
+.p_main2 img{
+    margin:5px 10px;
+}
+#p_imgse{
+    margin-left: 33px;
+}
+.p_strong{
+    width: 1214px;
+    height: 566px;
+    margin: 15px auto;
+}
+.p_strong_li{
+    width: 462px;
+height: 285px;
+border: 1px solid #e2e2e2;
+float: left;
+margin-bottom: 15px;
+margin-left: 7px;
+}
+.p_strong_li_div{
+    height: 38px;
+    line-height: 38px;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #dfdfdf;
+    padding-left: 15px;
+    font-size: 14px;
+}
+.p_strong_li_div span{
+    float: right;
+    margin-right: 10px;
+    font-size: 12px;
+}
+.p_strong_li_div p{
+    float: left;
+    background: url(http://v2.qihuiwang.com/images/ico.png) no-repeat -74px -502px;
+padding-left: 15px;
+color:#444;
+}
+.p_pjxl{
+    width: 462px;
+    height: 246px;
+    padding: 10px 5px 6px 10px;
+}
+.p_pjxl img{
+    float: left;
+}
+.p_pjxl1{
+    width: 297px;
+    float: left;
+    padding-left: 20px;
+}
+.p_pjxl1 p{
+    font-size: 16px;
+    color: #db2242;
+    margin-bottom: 15px;
+}
+.p_pjxl1 header{
+    font-size: 12px;
+    line-height: 25px;
+
+}
+.p_pjxl1 a{
+    color: #666
+}
+.p_pjxl_ul{
+    width: 430px;
+    height: 130px;
+    margin: 5px 10px 15px 10px;
+    line-height: 26px;
+    float: left;
+}
+.p_pjxl_ul li{
+    width: 430px;
+background: url(http://v2.qihuiwang.com/images/ico.png) no-repeat -317px -532px;
+padding-left: 8px;
+float: left;
+font-size: 12px;
+}
+.p_strong2{
+    width: 240px;
+    height: 587px;
+    border: 1px solid #dfdfdf;
+    float: left;
+    margin-left: 24px
+}
+.p_strong1{
+    width: 943px;
+    height: 589px;
+    float: left;
+}
+.p_strong2 p{
+
+    height: 38px;
+    line-height: 38px;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #dfdfdf;
+    padding-left: 10px;
+    font-size: 14px;
+    
+
+}
+.p_strong2 b{
+    background: url(http://v2.qihuiwang.com/images/ico.png) no-repeat -74px -512px;
+padding-left: 13px;
+}
+
+.p_lisul{
+    width: 240px;
+    height: 548px;
+    padding-top: 10px;
+
+}
+.p_lisul li{
+    width: 80px;
+    height: 36px;
+    line-height: 36px;
+    float: left;
+    font-size: 12px;
+    color: #444;
+    text-align: center;
+}
+.p_zuida{
+    width: 919px;
+    height: 38px;
+line-height: 38px;
+background-color: #f5f5f5;
+border-bottom: 1px solid #dfdfdf;
+padding-left: 15px;
+margin-left: 7px;
+}
+.p_zuida b{
+    background: url(http://v2.qihuiwang.com/images/ico.png) no-repeat -74px -512px;
+padding-left: 13px;
+}
+.p_ulul{
+    width: 240px;
+    height: 548px;
+    padding-top: 10px;
+}
+.p_ulul li{
+    margin: 25px 10px;
+}
+.p_weibu{
+    width: 1200px;
+    margin: 0 auto;
+    height: 225px;
+    border: 1px solid #dfdfdf;
+    margin-top: 80px;
+}
+.p_weibu>p{
+    height: 38px;
+    line-height: 38px;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #dfdfdf;
+    padding-left: 10px;
+    font-size: 14px;
+}
+.p_weibu b{
+    background: url(http://v2.qihuiwang.com/images/ico.png) no-repeat -74px -512px;
+padding-left: 13px;
+}
+.p_weibu_1 li{
+    padding: 15px 0 0 16px;
+float: left;
+width: 220px;
+height: 175px;
+overflow: hidden;
+}
+.p_weibu_1 p{
+    width: 220px;
+    height: 20px;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 12px;
+    line-height: 20px;
+}
+.p_zhendi{
+    width: 1200px;
+    margin: 5px auto;
+    height: 40px;
+    border-bottom: 2px solid #dfdfdf;
+
+}
+.p_zhendi p{
+    line-height: 40px;
+    font-size: 18px;
+}
+.p_shuai{
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+
+}
+.p_shuai li{
+    float: left;
+    margin-left: 20px;
+    color: #444;
+    font-size: 12px;
+    margin-top: 3px;
+}

@@ -1,0 +1,267 @@
+.aboutFive {
+    width: 100%;
+    height: 585px;
+    background: url(../images/mh/aboutBG.png) no-repeat bottom center #f3f4fb;
+    overflow: hidden;
+}
+
+.aboutFive .afTit {
+    width: 1200px;
+    height: 150px;
+    line-height: 150px;
+    margin: 0 auto;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 12px;
+    color: #333;
+}
+
+.aboutFive .about1 {
+    width: 1200px;
+    height: 57px;
+    margin: 0 auto;
+    background: url(../images/mh/changlanxian.png) no-repeat center center;
+    display: none
+}
+
+.aboutFive .about1 p {
+    width: 308px;
+    height: 55px;
+    border: 1px solid #57a6ff;
+    margin: 0 auto;
+    text-align: center;
+    background: #f3f4fb;
+    line-height: 55px;
+    border-radius: 55px;
+    font-size: 30px;
+    color: #577eff;
+}
+
+.aboutFive .about1_cen {
+    width: 1200px;
+    height: 230px;
+    margin: 0 auto;
+    padding-top: 50px;
+    margin-top: 330px;
+}
+
+.aboutFive .about1_cen li {
+    width: 350px;
+    height: 230px;
+    float: left;
+    margin-right: 50px;
+}
+
+.aboutFive .about1_cen li .about_img_box {
+    height: 60px;
+}
+
+.aboutFive .about1_cen li .about_tit {
+    height: 50px;
+    margin-top: 20px;
+    line-height: 50px;
+    font-size: 22px;
+    color: #555;
+}
+
+.aboutFive .about1_cen li .neirong {
+    height: 100px;
+    margin-top: 20px;
+    line-height: 26px;
+    font-size: 15px;
+    color: #888;
+}
+
+.aboutTwo {
+    width: 1200px;
+    height: 445px;
+    margin: 0 auto;
+    border-bottom: 1px solid #f3f4fb;
+    position: relative;
+    overflow: hidden;
+}
+
+.aboutTwo .aboutTwo_left {
+    width: 420px;
+    height: 445px;
+    /* float: left; */
+    background: url(../images/mh/about6.png) center center no-repeat;
+    margin-right: 140px;
+    position: absolute;
+    top: 0;
+    left: -390px;
+}
+
+.aboutTwo .aboutTwo_right {
+    width: 590px;
+    height: 445px;
+    /* float: left; */
+    font-size: 16px;
+    color: #888;
+    padding-right: 50px;
+    line-height: 28px;
+    position: absolute;
+    top: 0;
+    right: -640px;
+}
+
+.aboutTwo .aboutTwo_right h2 {
+    width: 640px;
+    height: 65px;
+    line-height: 65px;
+    font-size: 30px;
+    color: #577eff;
+    margin: 135px 0 25px 0;
+}
+
+.aboutThree {
+    width: 1200px;
+    height: 405px;
+    margin: 0 auto;
+    border-bottom: 1px solid #f3f4fb;
+    position: relative;
+    overflow: hidden;
+}
+
+.aboutThree .aboutThree_right {
+    width: 590px;
+    height: 405px;
+    float: left;
+    font-size: 16px;
+    color: #888;
+    padding-right: 50px;
+    line-height: 28px;
+    margin-right: 140px;
+    position: absolute;
+    top: 0;
+    left: -390px;
+}
+
+.aboutThree .aboutThree_right h2 {
+    width: 640px;
+    height: 65px;
+    line-height: 65px;
+    font-size: 30px;
+    color: #577eff;
+    margin: 65px 0 25px 0;
+}
+
+.aboutThree .aboutThree_left {
+    width: 420px;
+    height: 405px;
+    float: left;
+    background: url(../images/mh/about7.png) center center no-repeat;
+    position: absolute;
+    top: 0;
+    right: -640px;
+}
+
+.aboutFour {
+    width: 1200px;
+    height: 430px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.aboutFour .aboutFour_left {
+    width: 420px;
+    height: 430px;
+    float: left;
+    background: url(../images/mh/about8.png) center center no-repeat;
+    margin-right: 140px;
+    position: absolute;
+    top: 0;
+    left: -390px;
+}
+
+.aboutFour .aboutFour_right {
+    width: 590px;
+    height: 430px;
+    float: left;
+    font-size: 16px;
+    color: #888;
+    padding-right: 50px;
+    line-height: 28px;
+    position: absolute;
+    top: 0;
+    right: -640px;
+}
+
+.aboutFour .aboutFour_right h2 {
+    width: 640px;
+    height: 65px;
+    line-height: 65px;
+    font-size: 30px;
+    color: #577eff;
+    margin: 120px 0 25px 0;
+}
+
+.aboutFiv {
+    width: 100%;
+    height: 620px;
+    background: url(../images/mh/about9.png) no-repeat top center #f3f4fb;
+    padding-top: 90px;
+}
+
+.aboutFiv .aboutFive_right {
+    width: 1200px;
+    height: 85px;
+    text-align: center;
+    background: url(../images/mh/xiaolanxian.png) no-repeat 576px 80px;
+    font-size: 12px;
+    color: #333;
+    margin: 0 auto;
+}
+
+.aboutFiv .aboutFive_list {
+    width: 1200px;
+    height: 370px;
+    margin: 0 auto;
+    margin-top: 25px;
+    position: relative;
+    overflow: hidden;
+}
+
+.aboutFiv .aboutFive_list li {
+    width: 360px;
+    height: 370px;
+    /* margin-right: 60px; */
+    color: #888;
+    font-size: 14px;
+    line-height: 26px;
+    /* float: left; */
+    position: absolute;
+}
+
+.aboutFiv .aboutFive_list li .aboutFive_imgbox {
+    width: 360px;
+    height: 170px;
+    background: #fff;
+    border-radius: 3px;
+}
+
+.aboutFiv .aboutFive_list li h2 {
+    width: 360px;
+    height: 45px;
+    line-height: 45px;
+    margin-top: 12px;
+    font-size: 22px;
+    color: #555;
+    margin-bottom: 5px;
+    font-weight: normal;
+}
+
+.aboutFiv>a {
+    width: 141px;
+    height: 44px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    padding-left: 25px;
+    line-height: 44px;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 16px;
+    background: url(../images/mh/about13.png);
+    display: block
+}

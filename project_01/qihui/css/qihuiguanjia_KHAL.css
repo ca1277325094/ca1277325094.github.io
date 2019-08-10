@@ -1,0 +1,135 @@
+/* 客户案例这一块 */
+.JQ_case{
+    width: 1200px;
+    margin: 0 auto;
+    background: url(../images/mh/case02.png) no-repeat center 100px;
+}
+.JQ_case h2{
+    text-align: center;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 120px;
+}
+/* 每个小块的盒子的样式 */
+.JQ_caseBox{
+    width: 1198px;
+    height: 288px;
+    margin: 0 auto;
+    overflow: hidden;
+    border: solid 1px #e8e8e8;
+    margin-top: 30px;
+}
+/* 左边这一块 */
+.JQ_caseLeft{
+    width: 400px;
+    height: 290px;
+    float: left;
+    background: #fbfbfb;
+    padding: 0 0 10px 35px; 
+    border-radius: 5px;
+}
+/* 建筑建材背景图 */
+.JQ_caseBg{
+    background: url(../images/mh/case01.png) no-repeat;
+    width: 73px;
+    height: 48px;
+}
+.JQ_caseBg h5{
+    text-align: center;
+    line-height: 48px;
+    color: #ffffff;
+}
+/* 家具公司小块的样式 */
+.JQ_caseTitle{
+    margin-top: 20px;
+    height: 40px;
+    font-size: 22px;
+    width: 400px;
+}
+/* 管家背景图 */
+.JQ_caseTo{
+    color: #888;
+}
+.JQ_caseTo img{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 18px;
+}
+/* 主要产品小块的样式 */
+.JQ_casePro{
+    font-size: 14px;
+    color: #666;
+    line-height: 30px;
+    margin-top: 20px;
+}
+/* 所在地区的样式 */
+.JQ_caseArea{
+    font-size: 14px;
+    color: #666;
+    line-height: 30px;
+}
+/* 右边小块的样式 */
+.JQ_caseRight{
+    width: 763px;
+    height: 290px;
+    float: left;
+}
+.JQ_caseTe{
+    width: 763px;
+    height: 36px;
+    font-size: 14px;
+    font-weight:bolder;
+    color: #4179ff;
+    border-bottom: 1px solid #e5e5e5;
+}
+.JQ_caseBottom dl{
+    overflow: hidden;
+}
+.JQ_caseTe dd{
+    float: left;
+    width: 188px;
+    height: 36px;
+    text-align: center;
+    line-height: 36px;
+}
+/* 下边的那个滚动块 */
+.JQ_caseBottom{
+    font-size: 14px;
+    height: 290px;
+    overflow: auto ;
+}
+.JQ_caseBottom dl dd{
+    float: left;
+    width: 185px;
+    height: 35px;
+    text-align: center;
+    overflow: hidden;
+    line-height: 35px;
+    font-weight: bolder;
+    border-bottom: 1px solid #e5e5e5;
+}
+.JQ_caseBottom dl:hover dd{
+    background: #fbfbfb;
+}
+.JQ_caseBottom .JQ_time{
+    color: #999;
+}
+/* 360搜索 */
+.JQ_search{
+    color: #999999;
+}
+/* 设置第一页的样式 */
+.JQ_caseBottom dl dd span{
+    background: #ff8a00;
+    display: inline-block;
+    width: 53px;
+    height: 25px;
+    color: #ffffff;
+    border-radius:5px;
+    line-height: 25px; 
+}
+/* 设置查看快照的样式 */
+.JQ_caseBottom dl dd a{
+    color: #4179ff;
+}
+

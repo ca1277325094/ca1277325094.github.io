@@ -1,0 +1,1090 @@
+/* 头部（logo、搜索框） */
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+body{
+	background: #f5f5f5;
+}
+.cohoheader{
+	background: #ffffff;
+}
+.cohohead{
+	width: 1200px;
+	margin: 0 auto;
+	height: 124px;	
+}
+.logo,.logoFont,.search{
+	float: left;
+}
+.logo{
+	margin: 20px 0;
+	padding-right: 5px;
+}
+.logo a{
+	display: block;
+	height: 80px;
+}
+.logoFont{
+	margin: 32px 0;
+	padding-left: 20px;
+	border-left: 1px solid #dedede;
+	padding-right: 197px;
+}
+.searchbox{
+	width: 470px;
+	height: 44px;
+	border: 2px solid red;
+	position: relative;
+}
+.search{
+	margin: 40px 0;
+}
+.search .searchbox,.issue{
+	float: left;
+}
+.searchicon,label{
+	float: left;
+}
+.searchbox label{
+	width: 392px;
+	height: 44px;
+
+}
+.searchbox label input{
+	line-height: 44px;
+	width: 392px;
+	border: none;
+	outline: 0;
+	text-indent: 15px;	
+}
+.searchicon{
+	width: 78px;
+	height: 44px;
+	background: rgb(253, 74, 74);
+	color: #fff;
+	font-size: 17px;
+	line-height: 40px;
+	text-align: center;
+	cursor: pointer;
+}
+.issue{
+	width: 76px;
+	height: 46px;
+	margin-left: 10px;
+	margin-right: 0px;
+	border: 1px solid #dedede;
+	line-height: 46px;
+	font-size: 16px;
+	text-align: center;
+	padding-left: 0px;
+	background: #f0f0f0;
+	cursor: pointer;
+}
+
+/* 公司名 */
+.company{
+	width: 1198px;
+	border: 1px solid #dedede;
+	border-top: 3px solid red;
+	margin: 40px auto;
+	background: #fff;
+}
+.companyImg{
+	width: 80px;
+	height: 80px;
+	margin: 17px 20px;
+	float: left;
+	border-radius: 50%;
+	border: 1px solid #dedede;
+	position: relative;
+}
+.companyImg img{
+	position: absolute;
+	top: 13px;
+	left: 15px;
+}
+.companyName{
+	font-size: 30px;
+	color: red;
+	font-weight: 600;
+	line-height: 117px;
+	margin-left: 17px;
+}
+.companyTel{
+	float: right;
+	background: url(../images/coho_m3.png) #db2242 no-repeat 10px center;
+	font-size: 13px;
+	color: #fff;
+	padding: 8px 20px 8px 40px;
+	border-radius: 17px;
+	margin-right: 21px;
+	margin-top: 46px;
+	cursor: pointer;
+}
+.companyCode{
+	float: right;
+	border-left: 1px solid #dedede;
+	width: 104px;
+	height: 104px;
+	padding: 10px 20px;
+	background: url(../images/coho_j.png) no-repeat center center;
+
+}
+.clear{
+	clear: both;
+}
+
+/* 导航栏 */
+.nav{
+	background: #db2242;
+
+}
+.navBars{
+	width: 1200px;
+	margin: 0 auto;
+	height: 30px;
+    padding: 10px 0;
+    text-align: center;
+}
+.navBars a{
+	display: inline-block;
+    line-height: 30px;
+    height: 30px;
+    color: #fff;
+    font-size: 16px;
+    margin: 0 10px;
+    padding: 0 30px;
+}
+.navBars .cC_one{
+	border-radius: 15px;
+	background: #fff;
+	color: #db2242;
+}
+.navBars a:hover{
+	border-radius: 15px;
+	background: #fff;
+	color: #db2242;
+}
+
+/* 目前所在的位置 */
+.location{
+	width: 1200px;
+	margin: 0 auto;
+	padding: 20px 0;
+	margin-bottom: 20px;
+}
+.location_left{
+	float: left;
+	font-size: 12px;
+	color: #8a8a8a;
+}
+.location_left span{
+	color: #8a8a8a;
+}
+.location_left a{
+	color: #8a8a8a;
+}
+.location_left .location_as{
+	font-size: 14px;
+	font-weight: 600;
+}
+
+/* 商品详情 */
+.productDetails{
+	width: 1200px;
+	margin: 0 auto;
+	background: #fff;
+}
+
+.imagess{
+	width: 345px;
+	float: left;
+	padding: 30px;
+}
+.detailsImg{
+	width: 345px;
+    height: 345px;
+	display: block;
+	overflow: hidden;
+	position: relative;
+}
+.detailsImg div{
+	width: 345px;
+	height: 345px;
+	position: absolute;
+	left:500px;
+}
+.detailsImg img{
+	width: 345px;
+	height: 345px;
+}
+.detailsImgSm{
+	width: 345px;
+	margin: 20px 0;
+}
+.detailsImgSm img{
+	width: 70px;
+	height: 70px;
+	cursor: pointer;
+	margin: 0 5.8px;
+	border: 2px solid #fff;
+	color: rgb(255, 102, 0)
+}
+
+/* 收藏、分享、举报、扫码 */
+.inclined{
+	width: 345px;
+}
+.inclined>div{
+	border: 1px solid #e4e4e4;
+	height: 33px;
+	line-height: 33px;
+	display: inline-block;
+	color: #888;
+	padding: 0 10px 0 30px;
+	font-size: 12px;
+	margin: 0 3px;
+	border-radius: 4px;
+}
+.inclined a{
+	cursor: pointer;
+}
+.collect{
+	background: url(../images/coho_l4.png) no-repeat 8px center;
+
+}
+.share{
+	background: url(../images/coho_l3.png) no-repeat 8px center;
+	cursor: default;
+}
+.report{
+	background: url(../images/coho_l2.png) no-repeat 8px center;
+}
+.scan{
+	background: url(../images/coho_l1.png) no-repeat 8px center;
+	cursor: pointer;
+}
+.scan,.share{
+	position: relative;
+}
+.report{
+	color: #888;
+	cursor: pointer;
+}
+.shareTo{
+	width: 260px;
+	height: 0px;
+	/* border: 1px solid #fff; */
+	border-radius: 5px;
+	position: absolute;
+	top: 34px;
+	right: -110px;
+	background: #fff;
+	/* display: none; */
+	overflow: hidden;
+	transition: all 0.5s;
+}
+.shareTo h4{
+	background: rgb(226, 226, 226);
+	padding-left: 30px;
+}
+.shareTo div{
+	color: #333;
+}
+.shareTo>div{
+	display: inline-block;
+	width: 83px;
+	height: 30px;
+	padding-left: 26px;
+	margin: 5px 0px 0 14px;
+	background-repeat: no-repeat;
+	background-position: 3px center;
+}
+.share h4:last-child{
+	border: 1px solid #fff;
+	padding-left: 182px;
+}
+.share h4 div{
+	margin-top: 5px;
+	background: url(../images/coho_share.png) no-repeat 3px center;
+	padding-left: 26px;
+}
+.share:hover .shareTo{
+	height: 374px;
+	border: 1px solid #e4e4e4;
+}
+
+.scanCode{
+	width: 130px;
+	height: 0px;
+	position: absolute;
+	border-radius: 5px;
+	right: -43px;
+	top: 34px;
+	color:#333;
+	font-size: 12px;
+	text-align: center;
+	background-color: #fff;
+	overflow: hidden;
+	transition: all 0.5s;
+}
+.scanCode img{
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;
+}
+.scan:hover .scanCode{
+	height: 145px;
+	border: 1px solid #e4e4e4;
+}
+
+/* 商品信息 */
+.information{
+	width: 538px;
+    height: 487px;
+    float: left;
+    border-right: 1px solid #f3f3f3;
+    padding: 45px 0;
+	font-size: 14px;
+	background: #fff;
+	padding: 45px 0;
+}
+.information h2{
+	font-size: 22px;
+	line-height: 30px;
+	overflow: hidden;
+	color: #4d4d4d;
+	margin-bottom: 15px;
+	max-height: 60px;
+	font-weight: normal;
+
+}
+.productValue{
+	width: 479px;
+	height: 62px;
+	line-height: 31px;
+	padding: 15px 0;
+	margin-bottom: 10px;
+	font-size: 12px;
+	background: #ebebeb;
+	border-radius: 5px;
+}
+.productValue p{
+	height: 31px;
+	line-height: 31px;
+	padding-left: 20px;
+	font-size: 14px;
+}
+.productValue p:first-child{
+	color: #888;
+	margin-right: 20px;
+}
+.productValue p:first-child span{
+	color: #db2242;
+	font-size: 18px;
+	margin-left: 20px;
+}
+.productValue p:first-child span font{
+	font-size: 24;
+	margin: 0 5px;
+	font-weight: bold;
+}
+.productValue p:last-child{
+	color: #888;
+	margin-right: 20px;
+}
+.productValue p:last-child span{
+	margin-left: 20px;
+	color: #4c4c4c;
+
+}
+.productValue p:last-child span i{
+	margin-right: 20px;
+	font-style: normal;
+	color: #000;
+}
+.effect,.keyword,.heat,.tel,.companyURL,.date{
+	font-size: 14px;
+	margin: 20px 0;
+	color: #888;
+}
+.effect span{
+	margin-left: 20px;
+	color: #4c4c4c;
+}
+.keyword a:first-child{
+	margin-left: 20px;
+}
+.keyword a{
+	color: #4c4c4c;
+}
+.heat span{
+	margin-left: 20px;
+	color: #4c4c4c;
+}
+.companyURL a{
+	margin-left: 20px;
+	color: #4c4c4c;
+}
+.date span{
+	margin-left: 20px;
+	color: #4c4c4c;
+}
+.tel{
+	line-height: 33px;
+
+}
+.tel .companyTel{
+	margin-top: 0;
+	line-height: 18px;
+	margin-right: 300px;
+}
+.information a:hover{
+	color: red;
+}
+.enquiryPrice{
+	color: #fff;
+	background: #db2242;
+	width: 175px;
+	height: 43px;
+	line-height: 43px;
+	border-radius: 10px;
+	font-size: 16px;
+	margin-top: 32px;
+	text-align: center;
+	cursor: pointer;
+}
+/* 买家正在看 */
+.shopInfo{
+	width: 215px;
+	height: 567px;
+	float: left;
+	padding: 0 15px;
+	/* background: #888; */
+}
+.shopInfo h2{
+	text-align: center;
+	font-weight: normal;
+	font-size: 16px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.shopInfo h2 span{
+	display: inline-block;
+	padding-bottom: 6px;
+	border-bottom: 5px solid #db2242;
+}
+
+.shopInfo a{
+	display: block;
+	position: relative;
+	padding: 19px 0 19px 102px;
+
+}
+.shopInfo a img{
+	width: 90px;
+	height: 90px;
+	position: absolute;
+	left: 0;
+	top: 19px;
+}
+.shopInfo a b{
+	font-size: 12px;
+	line-height: 20px;
+	display: block;
+	color: #333;
+}
+.shopInfo a span{
+	font-size: 12px;
+	color: #db2242;
+	line-height: 25px;
+	display: block;
+	height: 25px;
+	margin-top: 5px;
+}
+/* 诚信档案，产品详细说明 */
+.wrapper{
+	width: 1200px;
+	margin: 20px auto;
+}
+/* 诚信档案 */
+.wrapperLeft{
+	width: 250px;
+	float: left;
+}
+.record{
+	width: 250px;
+	background: #fff;
+
+}
+.recordTitle{
+	padding: 0 20px;
+	border-bottom: 1px solid #d1d0d0;
+}
+.recordTitle div{
+	width: 83px;
+	padding-left: 23px;
+	border-bottom: 1px solid #db2242;
+	height: 42px;
+	text-align: center;
+	line-height: 42px;
+	background: url(../images/coho_m.png) no-repeat 7px center;
+}
+.collectCompany{
+	padding: 10px 20px;
+	background: #fafafa;
+
+}
+.collectCompany p{
+	color: #db2242;
+	font-size: 14px;
+	line-height: 20px;
+	padding: 5px 0 8px 0;
+}
+.collectCompany .collectNo{
+	background: #db2242;
+	border-radius: 5px;
+	color: #fff;
+	width: 78px;
+	line-height: 25px;
+	text-align: center;
+	cursor: pointer;
+	font-size: 12px;
+
+}
+.collectCompany .collectYes{
+	display: none;
+	line-height: 25px;
+	text-align: center;
+	cursor: pointer;
+	font-size: 12px;
+	background: #ededed;
+	color: #666;
+	width: 78px;
+	height: 25px;
+	border-radius: 5px;
+}
+.companyInfo{
+	padding: 8px 2px 10px 20px;
+	list-style-type: none;
+}
+.companyInfo li{
+	height: 32px;
+	font-size: 12px;
+	color: #333;
+	line-height: 32px;
+	overflow: hidden;
+}
+.companyInfo li label{
+	color: #999;
+	float: left;
+	font-size: 12px;
+	padding-right: 4px;
+	width: 56px;
+	cursor: default;
+}
+.companyInfo .sell{
+	height: auto;
+	line-height: 20px;
+	margin: 5px 0;
+	max-height: 66px;
+	overflow-x: hidden;
+}
+.sell a{
+	float: left;
+	margin: 0 15px 3px 0;
+}
+.companyInfo .publicity label{
+	width: 80px;
+}
+.companyInfo #QQonline{
+	cursor: pointer;
+	display: inline-block;
+	height: 22px;
+	line-height: 22px;
+	padding: 0 8px 0 25px;
+	color: #333;
+	border-radius: 3px;
+	border: 1px solid #e1e1e1;
+	margin-left: 8px;
+	background: url(../images/coho_m2t.png) #f4f4f4 no-repeat 4px center;
+	transition: all 0.8s;
+}
+.companyInfo a:first-child:hover{
+	background-color: #cacaca;
+}
+.companyInfo a:hover{
+	color: #db2242;
+}
+
+/* 产品分类 */
+.classify{
+	width: 250px;
+	background: #fff;
+	margin-top: 20px;
+}
+.classifyTitle{
+	padding: 0 20px;
+	border-bottom: 1px solid #d1d0d0;
+}
+.classifyTitle div{
+	width: 96px;
+	border-bottom: 1px solid #db2242;
+	height: 42px;
+	text-align: center;
+	line-height: 42px;
+}
+.proSort{
+	padding: 18px 2px 10px 20px;
+	list-style-type: none;
+}
+.firstSort{
+	height: 32px;
+	line-height: 32px;
+	font-size: 14px;
+	color: #666;
+	padding-left: 35px;
+	background: url(../images/coho_n.png) no-repeat 8px center;
+}
+.firstSort a:hover{
+	color: #db2242;
+}
+/* 联系我们 */
+.contact{
+	width: 250px;
+	background: #fff;
+	margin-top: 20px;
+}
+.contactTitle{
+	padding: 0 20px;
+	border-bottom: 1px solid #d1d0d0;
+}
+.contactTitle div{
+	width: 96px;
+	border-bottom: 1px solid #db2242;
+	height: 42px;
+	text-align: center;
+	line-height: 42px;
+}
+.contactUs{
+	list-style-type: none;
+	padding: 18px 2px 10px 20px;
+}
+.contactUs li{
+	height: 30px;
+	line-height: 30px;
+	color: #4c4c4c;
+	font-size: 14px;
+}
+.contactUs li label{
+	color: #999;
+	float: left;
+	padding-right: 4px;
+	width: 72px;
+}
+.contactUs li div{
+	width: 85px;
+	margin-left: 78px;
+	padding-left: 34px;
+	font-size: 12px;
+	color: #fff;
+	background: url(../images/coho_m3.png) #db2242 no-repeat 8px center;
+	border-radius: 15px;
+	cursor: pointer;
+}
+/* 产品详情 */
+.wrapperRigth{
+	width: 930px;
+	float: left;
+	margin-left: 20px;
+}
+.appear{
+	width: 930px;
+	background: #fff;
+}
+.appearTitle{
+	padding: 0 20px;
+	border-bottom: 1px solid #d1d0d0;
+}
+.appearTitle div{
+	width: 96px;
+	border-bottom: 1px solid #db2242;
+	height: 42px;
+	text-align: center;
+	line-height: 42px;
+}
+.dateMain{
+	width: 870px;
+	background: #fff;
+	padding: 20px 30px;
+}
+.parameter{
+	width: 868px;
+	border: 1px solid #ddd;
+	border-right: 0;
+	border-bottom: 0;
+	line-height: 30px;
+	color: #666;
+	font-size: 12px;
+	margin: 30px 0 20px 0;
+	list-style-type: none;
+}
+.clear{
+	clear: both;
+}
+.parameter p{
+	width: 30px;
+	width: 855px;
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	background: #eee;
+	font-weight: bold;
+	padding-left: 12px;
+	
+}
+.parameter li{
+	border-bottom: 1px solid #ddd;
+	width: 433px;
+	border-right: 1px solid #ddd;
+	float: left;
+	height: 30px;
+	font-size: 14px;
+}
+.parameter li span{
+	display: inline-block;
+	width: 113px;
+	padding-left: 12px;
+	margin-right: 12px;
+	border-right: 1px solid #ddd;
+	font-size: 14px;
+}
+.detaTit{
+	font-size: 16px;
+	color: #555;
+	font-weight: bold;
+	height: 60px;
+	line-height: 60px;
+}
+/* 实物图 */
+.imgMain div{
+	font-size: 14px;
+	color: #888;
+	line-height: 28px;
+}
+/* 相关栏目 */
+.relPro{
+	width: 1200px;
+	background: #fff;
+	margin: 10px auto;
+	margin-bottom: 10px;
+}
+.relProTitle{
+	padding: 0 20px;
+	border-bottom: 1px solid #d1d0d0;
+}
+.relProTitle div{
+	width: 96px;
+	border-bottom: 1px solid #db2242;
+	height: 42px;
+	text-align: center;
+	line-height: 42px;
+}
+.clumnList{
+	padding: 0 20px;
+}
+.clumnList h3{
+	margin-top: 10px;
+	height: 40px;
+	line-height: 40px;
+	color: #555;
+	font-size: 14px;
+}
+.clumnList a{
+	font-size: 14px;
+	display: inline-block;
+	padding: 2px 10px;
+	color: #5e5e5e;
+	background: #f5f5f5;
+	line-height: 26px;
+	margin: 0 10px 10px 0;
+	transition: all 1s;
+}
+.clumnList a:hover{
+	background: #b9b9b9;
+	color: #db2242;
+}
+
+/* 未找到需要的产品信息，立即发布采购信息，让商家主动与您联系 */
+.contactd{
+	width: 1158px;
+	margin: 20px auto;
+	background: #fff;
+	border: solid 1px #eee;
+    padding: 20px;
+	font-size: 14px;
+	line-height: 22px;
+}
+.contactd a{
+	color: red;
+}
+.contactd a:hover{
+	text-decoration: underline;
+}
+
+/* 免责声明 */
+.state{
+	width: 1140px;
+	margin: 0 auto;
+	margin-top: 20px;
+	background: #fff;
+	padding: 25px 30px;
+	color: #999;
+	font-size: 12px;
+	line-height: 22px;
+}
+.state p{
+	margin-top: 20px;
+}
+.state h2{
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	color: #db2242;
+	display: block;
+	padding-left: 30px;
+	margin-bottom: 5px;
+	background: url(../images/coho_l2.png) no-repeat 8px center;
+}
+
+/* 联系方式界面布局 */
+.contactWay{
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	background: rgb(0,0,0,0.5);
+	display: none;
+}
+.contactWayInter{
+	width: 560px;
+	height: 300px;
+	background: #fff;
+	border-radius: 10px;
+	margin: 200px auto;
+	position: relative;
+
+}
+.contactWayInter .telTitle{
+	height: 36px;
+	line-height: 36px;
+	padding: 8px 20px;
+	font-size: 18px;
+	border-bottom: 1px solid #e5e5e5;
+}
+.contactWayInter .telContent{
+	padding: 25px 40px;
+}
+.contactWayInter .telContent p{
+	font-size: 14px;
+	line-height: 30px;
+}
+.contactWayInter .telContent .telCare{
+	background: #f0f0f0;
+	padding: 15px 30px;
+	margin-top: 20px;
+	border-radius: 5px;
+	border: 1px solid #e7e7e7;
+	font-size: 12px;
+	line-height: 25px;
+}
+
+/* 举报界面布局 */
+.reportpage{
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	background: rgb(0,0,0,0.5);
+	display: none;
+}
+.reportpageInter{
+	width: 560px;
+	height: 412px;
+	background: #fff;
+	border-radius: 10px;
+	margin: 200px auto;
+	position: relative;
+}
+.reportpageInter .reportTitle{
+	height: 36px;
+	line-height: 36px;
+	padding: 8px 20px;
+	font-size: 18px;
+	border-bottom: 1px solid #e5e5e5;
+}
+.reportContent{
+	padding: 20px 20px 0 20px;
+	font-size: 14px;
+	color: #888;
+}
+.lineLe{
+	display: inline-block;
+	vertical-align: top;
+}
+.lineLe span{
+	width: 95px;
+	display: inline-block;
+	text-align: right;
+}
+.lineLe span i{
+	color:#db2242;
+	margin-right: 5px;
+}
+.reportType{
+	margin-bottom: 20px;
+}
+.reportType select{
+	width: 390px;
+	height: 28px;
+	padding-left: 10px;
+	border: 1px solid #e7e7e7;
+	color: #999;
+	border-radius: 4px;
+	font-size: 12px;
+}
+.reportCause textarea{
+	width: 378px;
+	height: 103px;
+	border: 1px solid #e7e7e7;
+	border-radius: 3px;
+	margin-top: -1px;
+	padding: 5px;
+	resize: none;
+}
+.yourTel{
+	margin-top: 10px;
+}
+.yourTel .lineLe{
+	vertical-align: middle;
+}
+.yourTel input{
+	width: 207px;
+	height: 35px;
+	text-indent: 10px;
+	border: 1px solid #e7e7e7;
+}
+.yourTel .sendcode{
+	background: #e4e4e4;
+	display: inline-block;
+	padding: 0 10px;
+	height: 34px;
+	border-radius: 3px;
+	vertical-align: middle;
+	margin-left: 10px;
+	cursor: pointer;
+	text-align: center;
+	line-height: 34px;
+	font-size: 12px;
+}
+.verifyCode{
+	margin-top: 10px;
+}
+.verifyCode .lineLe{
+	vertical-align: middle;
+}
+.verifyCode input{
+	width: 207px;
+	height: 35px;
+	text-indent: 10px;
+	border: 1px solid #e7e7e7;
+}
+.decide{
+	width: 179px;
+	height: 40px;
+	background: #db2242;
+	font-size: 16px;
+	color: #fff;
+	border-radius: 3px;
+	border: none;
+	cursor: pointer;
+	margin-left: 99px;
+	margin-top: 20px;
+	transition: all 0.5s;
+}
+.reportN{
+	background: #fcfcfc;
+	border: 1px solid #e7e7e7;
+	color: #333;
+	margin-left: 30px;
+}
+.close{
+	position: absolute;
+	top: 6px;
+	right: 18px;
+	font-size: 15px;
+	padding:10px;
+	cursor: pointer;
+	transition: all 1s;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+}
+.close:hover{
+	transform: rotate(540deg);
+}
+
+/* QQ在线界面 */
+.QQonline{
+	display: none;
+	position: fixed;
+	width: 463px;
+	height: 292px;
+	top: 50%;
+	left: 50%;
+	margin-top: -146px;
+	margin-left: -232.5px;
+	background: #fff;
+	z-index: 666;
+	border: 1px solid #d4d4d4;
+	border-radius: 10px;
+	box-shadow: 0 0 15px #d4d4d4;
+}
+.QQorHide{
+	padding: 60px 20px 20px 20px;
+}
+.selectWay{
+	margin-bottom: 40px;
+	font-size: 16px;
+}
+.QQorHide>a{
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	margin: 0 40px;
+	color: blue;
+	text-align: center;
+	margin-bottom: 40px;
+}
+.QQorHide .QQChat{
+	margin-left: 90px;
+}
+.QQorHide>a img{
+	border: 1px double rgb(192, 192, 192);
+	transition: all 0.5s;
+}
+.QQorHide>a img:hover{
+	border-color: #04bedf;
+	box-shadow: 0 0 10px #04bedf;
+}
+.anzhuangQQ a{
+	margin-left: 355px;
+	color: #8e8e8e;
+}

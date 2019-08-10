@@ -1,0 +1,490 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+body{
+	background: #f5f5f5;
+}
+.cohoheader{
+	background: #ffffff;
+}
+.cohohead{
+	width: 1200px;
+	margin: 0 auto;
+	/* overflow: hidden; */
+	height: 124px;
+
+	
+}
+.logo,.logoFont,.search,.code{
+	float: left;
+}
+.logo{
+	margin: 20px 0;
+	padding-right: 5px;
+}
+.logo a{
+	display: block;
+	height: 80px;
+}
+.logoFont{
+	margin: 32px 0;
+	padding-left: 20px;
+	border-left: 1px solid #dedede;
+	padding-right: 110px;
+}
+.searchbox{
+	width: 470px;
+	height: 40px;
+	border: 2px solid red;
+	position: relative;
+}
+.target{
+	width: 81px;
+	height: 30px;
+	border-right: 1px solid #dedede;
+	padding: 10px 0 0 10px;
+	cursor: pointer;
+}
+.target img{
+	transition: all 0.5s;
+}
+/* .target img:hover{
+} */
+.target span{
+	font-size: 13px;
+	margin-right: 26px;
+	margin-left: 5px
+}
+.search{
+	margin: 40px 0;
+}
+.searchbox label{
+	overflow: hidden;
+}
+.search .searchbox,.issue,.code{
+	float: left;
+}
+.searchbox .target,.searchicon,label{
+	float: left;
+}
+.searchbox label{
+	width: 325px;
+	height: 40px;
+
+}
+.searchbox label input{
+	line-height: 40px;
+	width: 325px;
+	border: none;
+	outline: 0;
+	text-indent: 15px;	
+}
+.searchicon{
+	width: 53px;
+	height: 40px;
+	background: rgb(253, 74, 74);
+	background-image: url(../images/coho_e.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	cursor: pointer;
+}
+.searchRange{
+	position: absolute;
+	background: #fff;
+	padding: 5px 10px 5px 10px;
+	border: 1px solid #dedede;
+	border-top: none;
+	width: 70px;
+	top: 40px;
+	left: 0px;
+	display: none;
+	cursor: pointer;
+}
+.searchRange span{
+	display: inline-block;
+	line-height: 30px;
+	padding-left: 23px;
+	padding-right: 10px;
+	font-size: 14px;
+	color: #818181;
+}
+.searchRange span:hover{
+	color: red;
+	background-image: url(../images/coho_g1.png)
+}
+.range1{
+	background: url(../images/coho_g.png)  no-repeat 0px center;
+}
+.range2{
+	background: url(../images/coho_g.png)  no-repeat 0px center;
+}
+.range3{
+	background: url(../images/coho_g.png)  no-repeat 0px center;
+}
+
+.issue{
+	width: 84px;
+	height: 42px;
+	margin-left: 10px;
+	margin-right: 54px;
+	border: 1px solid #dedede;
+	background-image: url(../images/coho_f.png);
+	background-repeat: no-repeat;
+	background-position: 12px center;
+	line-height: 42px;
+	font-size: 14px;
+	padding-left: 33px;
+	cursor: pointer;
+}
+.code{
+	margin-top: 13px;
+}
+.code p{
+	font-size: 12px;
+}
+.code img{
+	margin-top: 5px;
+	padding: 3px;
+	border: 1px solid #dedede;
+}
+
+/* 目前所在的位置 */
+
+.location{
+	width: 1200px;
+	margin: 0 auto;
+	padding: 20px 0;
+	margin-bottom: 20px;
+}
+
+.location_left{
+	float: left;
+	font-size: 12px;
+	color: #8a8a8a;
+}
+.location_left span{
+	color: #8a8a8a;
+}
+.location_left a{
+	color: #8a8a8a;
+}
+.location_right{
+	float: right;
+	font-size: 12px;
+}
+.location_left .location_as{
+	font-size: 14px;
+	font-weight: 600;
+}
+.location_right{
+	color: #8a8a8a;
+}
+.location_right span{
+	color:red;
+}
+
+
+
+.view{
+	width: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+/* 选择查看产品行业，选择供货地 */
+.select .industry,.select .area{
+	width: 1018px;
+	position: relative;
+	padding: 10px 80px 10px 100px;
+	background: #ffffff;
+	height: 30px;
+
+	border: 1px solid #dedede;
+}
+.select .industry{
+	border-bottom: none;
+	overflow: hidden;
+}
+.select .area{
+	overflow: hidden;
+}
+.industry p,.industry div{
+	position: absolute;
+}
+.area p,.area div{
+	position: absolute;
+}
+.industry div,.area div{
+	top: 14px;
+	right: 13px;
+	width: 30px;
+	height: 25px;
+	background: #ececec;
+	border: 1px solid #979797;
+	border-radius: 4px;
+	font-size: 12px;
+	line-height: 25px;
+	padding-left: 5px;
+	cursor: pointer;
+	transition: all 0.5s
+}
+.industry p,.area p{
+	left: 17px;
+	top: 17px;
+	font-size: 12px;
+}
+.industry a,.area a{
+	color: #266eab;
+	line-height: 30px;
+	margin-left: 25px;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 12px;
+}
+.industry a:hover{
+	text-decoration: underline;
+}
+.area a:hover{
+	text-decoration: underline;
+}
+.industry div:hover{
+	border-color: red;
+	color: red;
+	background-color: rgb(246, 207, 207);
+}
+.area div:hover{
+	border-color: red;
+	color: red;
+	background-color: rgb(246, 207, 207);
+}
+
+
+/* 按照上架时间或价格排序 */
+
+.viewSort{
+	width: 1198px;
+	margin: 20px auto;
+	overflow: hidden;
+	background: #ffffff;
+	border: 1px #eaeaea solid;
+}
+.viewSort .sortLeft{
+	float: left;
+	line-height: 42px;
+}
+.viewSort .sortRight{
+	float: right;
+}
+.sortLeft a{
+	display: block;
+	font-size: 12px;
+	float: left;
+    padding: 0px 20px;
+}
+.sortLeft .left1{
+	border-right: 1px #eee solid;
+	background: #e02445;
+	color: #fff;
+}
+.sortLeft .left2{
+	color: #333;
+	background: #e7e7e7;
+}
+.sortLeft i{
+	font-style: normal;
+	margin-left: 10px;
+	font-weight: 400;
+}
+.sortRight{
+	right: 0;
+}
+.sortRight .right1{
+	display: inline-block;
+    margin: 0px 5px;
+    line-height: 40px;
+}
+.sortRight .right1 i{
+	font-style: normal;
+	color: #e02445;
+}
+.sortRight .right2{
+	display: inline-block;
+    margin: 0px 5px;
+    line-height: 40px;
+}
+.sortRight .right2 a{
+	display: inline-block;
+    border: 1px #d6d6d6 solid;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    padding: 2px;
+    line-height: normal;
+	color: #bababa;
+	font-size: 16px;
+	font-style: normal;
+	text-align: center;
+}
+
+/* 商品列表 */
+.wrapperleft-950{
+	width: 950px;
+	float: left;
+	overflow: hidden;
+}
+.productShowGrid{
+	width: 950px;
+}
+.productShowGrid ul{
+	overflow: hidden;
+}
+.productShowGrid ul li{
+	width: 215.5px;
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid #eee;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    float: left;
+	vertical-align: middle;
+	transition: all 0.8s;
+}
+.productShowGrid ul li:hover{
+	border-color: red;
+
+}
+.productImg{
+	padding: 15px;
+    width: 186px;
+    height: 186px;
+    overflow: hidden;
+}
+.productImg img{
+	width: 100%;
+	height: 100%;
+}
+.productInfo{
+	padding: 10px;
+	border-bottom: 1px solid #eee;
+}
+.productTit{
+	font-size: 14px;
+    color: #000;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.productTit a{
+	font-size: 14px;
+}
+.companyName{
+	line-height: 26px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #979797;
+    margin-top: 5px;
+}
+.companyName a{
+	color: #979797;
+	margin-top: 5px;
+	font-size: 12px;
+}
+.iconGroup i{
+	display: inline-block;
+    margin-right: 5px;
+	vertical-align: middle;
+	border: 1px #e02445 solid;
+    line-height: normal;
+    padding: 2px;
+    color: #e02445;
+    font-size: 12px;
+    min-width: 16px;
+    text-align: center;
+	font-family: '宋体';
+	font-style: normal;
+}
+.productPrice{
+	color: #ff5700;
+	padding: 10px;
+	font-size: 16px;
+}
+
+/* 热门商品列表 */
+.productHot{
+	width: 230px;
+	height: 1568px;
+	float: right;
+	overflow: hidden;
+}
+.productHot ul li{
+	width: 215px;
+    overflow: hidden;
+    background: #fff;
+	border: 1px solid #eee;
+	margin-left: 13px;
+    margin-bottom: 20px;
+    float: left;
+	vertical-align: middle;
+	transition: all 0.8s;
+	position: relative;
+}
+.productHot ul li:hover{
+	border-color: red;
+
+}
+.productHot ul li .productImg{
+	width: 181px
+}
+.productHot ul li .hotLogo{
+	position: absolute;
+	width: 61px;
+	height: 20px;
+	top: 10px;
+	right: 0;
+	line-height: 20px;
+	font-size: 14px;
+	background: #dedede;
+	transition: all 0.5s;
+}
+.hotLogo .hotTri{
+	position: absolute;
+	width: 0px;
+	height: 0px;
+	top: 0;
+	left: -20px;
+	border: 10px solid #dedede;
+	border-left-color: transparent;
+	transition: all 0.5s;
+}
+.productHot ul li:hover .hotLogo{
+	background: rgb(250, 77, 8);
+	color:#ffffff;
+}
+.productHot ul li:hover .hotTri{
+	border-color: rgb(250, 77, 8);
+	border-left-color: transparent;
+}
+
+/* 未找到需要的产品信息，立即发布采购信息，让商家主动与您联系 */
+.contact{
+	width: 1158px;
+	margin: 50px auto;
+	background: #fff;
+	border: solid 1px #eee;
+    padding: 20px;
+	font-size: 14px;
+	line-height: 22px;
+	
+}
+.contact a{
+	color: red;
+}
+.contact a:hover{
+	text-decoration: underline;
+}

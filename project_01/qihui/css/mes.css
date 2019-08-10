@@ -1,0 +1,944 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	color: black;
+	text-decoration:none;
+}
+body{
+	background-color: #F6F6F6;
+}
+
+
+/*//toubu*/
+
+.xhhead{
+	width: 1200px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.xhqh{
+	margin-top: 30px;
+	border-right: 1px solid #E3E3E3;
+	float: left;
+}
+.xhnews{
+	font-weight: bolder;
+	font-size: 21px;
+	display: block;
+	height: 132px;
+	float: left;
+	line-height: 125px;
+	color: #444;
+	margin-left: 20px;
+}
+.xhproduct{
+	height: 22px;
+	width: 560px;
+	float: left;
+	margin-top: 25px;
+	overflow: hidden;
+	margin-left: 205px;
+}
+.xhproduct p{
+	float: left;
+	width: 70px;
+	text-align: center;
+	font-size: 14px;
+	border-right: 1px solid #444;
+	cursor: pointer;
+}
+.xhtel{
+	color: #333;
+	font-size: 12px;
+	border: none;
+	float: left;	
+	margin-left: 100px;
+}
+.xhtel span{
+	color: #006600;
+
+}
+.xhproduct img{
+	float: left;;
+}
+.int{
+	width: 700px;
+	float: right;
+	margin-top: 2px;
+}
+.int input{
+	width: 450px;
+	height: 38px;
+	outline: none;
+	vertical-align: middle;
+	border: 2px solid #DFDFDF;
+	text-indent: 2em;
+	margin-left: 103px;
+}
+.int button{
+	width: 95px;
+	height: 40px;	
+	background-color: #DB2242;
+	border: none;
+	outline: none;
+	color: white;
+	font-size: 16px;
+	vertical-align: middle;
+	font-weight: bolder;
+}
+.xhproduct p:hover{
+  	color: red;
+  	text-decoration-line: underline;
+}
+.xhcode{
+	float: right;
+	width: 100px;
+	height: 100px;
+}
+.xhcode{
+	font-size: 12px;
+	text-align: center;
+	margin-right:10px;
+	margin-top:10px;
+}
+.xhcode img{
+	width: 60px;
+	height: 60px;
+}
+
+
+  /*di2bufen*/
+
+
+.xhclassify{
+	height: 40px;
+	background-color: #DB2242;
+}
+.xhsort{
+	width: 1200px;
+	margin: 0 auto;
+}
+.xhcategory{
+	list-style: none;
+	float: left;
+	font-size: 14px;
+	color: white;
+	line-height: 40px;
+	margin-left: 10px;
+	cursor: pointer;
+	width: 70px;
+	text-align: center;
+	height: 33px;
+	margin-top: 7px;
+	/*background-color:white;*/
+}
+.xhcategory:hover{
+	opacity: 0.5;
+}
+.off:hover{
+	opacity: 1;
+}
+
+
+
+	/*//di3bufen*/
+
+
+.xhboard{
+	width: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+	background-color:white;
+	margin-top: 15px;
+	cursor: pointer;
+}
+.xhcar{
+	width: 90px;
+	height: 120px;
+	float: left;
+}
+.ico0{
+	background-image: url(../images/xiaodu/1.png);
+	background-repeat: no-repeat;
+	background-position:0 0;
+	width: 30px;
+	height: 30px;
+	margin-top:25px;
+	margin-left: 28px;
+}
+.xhcar p{
+	text-align: center;
+	font-size: 16px;
+	margin-top: 10px;
+	color: #555;
+}
+.ico1{
+	background-image: url(../images/xiaodu/1.png);
+	background-repeat: no-repeat;
+	background-position:-30px 0px;
+	width: 30px;
+	height: 30px;
+	margin-top:25px;
+	margin-left: 28px;
+}
+.ico2{
+	background-image: url(../images/xiaodu/1.png);
+	background-repeat: no-repeat;
+	background-position:-63px 0px;
+	width: 30px;
+	height: 30px;
+	margin-top:25px;
+	margin-left: 28px;
+}
+.ico3{
+	background-image: url(../images/xiaodu/1.png);
+	background-repeat: no-repeat;
+	background-position:-97px 0px;
+	width: 30px;
+	height: 30px;
+	margin-top:25px;
+	margin-left: 28px;
+}
+.ico4{
+	background-image: url(../images/xiaodu/1.png);
+	background-repeat: no-repeat;
+	background-position:5px -35px;
+	width: 30px;
+	height: 30px;
+	margin-top:25px;
+	margin-left: 28px;
+}
+.ico5{
+	background-image: url(../images/xiaodu/1.png);
+	background-repeat: no-repeat;
+	background-position:-27px 	 -33px;
+	width: 33px;
+	height: 30px;
+	margin-top:25px;
+	margin-left: 28px;
+}
+.ico6{
+	background-image: url(../images/xiaodu/1.png);
+	background-repeat: no-repeat;
+	background-position:-60px -33px;
+	width: 33px;
+	height: 30px;
+	margin-top:25px;
+	margin-left: 28px;
+}
+.ico7{
+	background-image: url(../images/xiaodu/1.png);
+	background-repeat: no-repeat;
+	background-position:-95px 	 -33px;
+	width: 33px;
+	height: 30px;
+	margin-top:25px;
+	margin-left: 28px;
+}
+.ico8{
+	background-image: url(../images/xiaodu/1.png);
+	background-repeat: no-repeat;
+	background-position:0px 	 -66px;
+	width: 33px;
+	height: 30px;
+	margin-top:25px;
+	margin-left: 28px;
+}
+.ico9{
+	background-image: url(../images/xiaodu/1.png);
+	background-repeat: no-repeat;
+	background-position:-35px 	 -66px;
+	width: 33px;
+	height: 30px;
+	margin-top:25px;
+	margin-left: 28px;
+}
+.ico10{
+	background-image: url(../images/xiaodu/1.png);
+	background-repeat: no-repeat;
+	background-position:-68px 	 -66px;
+	width: 33px;
+	height: 30px;
+	margin-top:25px;
+	margin-left: 28px;
+}
+.ico11{
+	background-image: url(../images/xiaodu/1.png);
+	background-repeat: no-repeat;
+	background-position:3px	 -100px;
+	width: 33px;
+	height: 30px;
+	margin-top:25px;
+	margin-left: 28px;
+}
+.ico12{
+	background-image: url(../images/xiaodu/1.png);
+	background-repeat: no-repeat;
+	background-position:-35px	 -99px;
+	width: 33px;
+	height: 30px;
+	margin-top:25px;
+	margin-left: 28px;
+}
+.xhcar:hover{
+	background-color:#DB2242;
+}
+.xhcar:hover p{
+	color: white;
+}
+.xhcar:hover .ico0{
+	background-image: url(../images/xiaodu/2.png)
+}
+.xhcar:hover .ico1{
+	background-image: url(../images/xiaodu/2.png)
+}
+.xhcar:hover .ico2{
+	background-image: url(../images/xiaodu/2.png)
+}
+.xhcar:hover .ico3{
+	background-image: url(../images/xiaodu/2.png)
+}
+.xhcar:hover .ico4{
+	background-image: url(../images/xiaodu/2.png)
+}
+.xhcar:hover .ico5{
+	background-image: url(../images/xiaodu/2.png)
+}
+.xhcar:hover .ico6{
+	background-image: url(../images/xiaodu/2.png)
+}
+.xhcar:hover .ico7{
+	background-image: url(../images/xiaodu/2.png)
+}
+.xhcar:hover .ico8{
+	background-image: url(../images/xiaodu/2.png)
+}
+.xhcar:hover .ico9{
+	background-image: url(../images/xiaodu/2.png)
+}
+.xhcar:hover .ico10{
+	background-image: url(../images/xiaodu/2.png)
+}
+.xhcar:hover .ico11{
+	background-image: url(../images/xiaodu/2.png)
+}
+.xhcar:hover .ico12{
+	background-image: url(../images/xiaodu/2.png)
+}
+
+
+
+	/*//di4bufen banner*/
+
+
+
+.xhbanner{
+	width: 624px;
+	height: 335px;
+	position: relative;
+	cursor: pointer;
+	float: left;
+}
+.xhbanner img{
+	position: absolute;
+	display: none;
+	width: 100%;
+	height:338px;
+}
+.xhnext,.xhprev{
+	width: 40px;
+	height: 75px;
+	background-color: gray;
+	opacity: 0.5;
+	text-align: center;
+	position: absolute;
+	line-height: 75px;
+	
+}
+.xhnext{
+	top: 50%;
+	margin-top: -37px;
+	left: 0;
+	color: white;
+}
+.xhprev{
+	top: 50%;
+	margin-top: -37px;
+	right: 0;
+	color: white;
+}
+.xhnext:hover{
+	opacity: 0.5;
+	background-color: black;
+}
+.xhprev:hover{
+	opacity: 0.5;
+	background-color: black;
+}
+.xhscroll{
+	width: 624px;
+	height: 55px;
+	background-color: black;
+	position: absolute;
+	bottom: 0;
+	line-height: 55px;
+}
+.xhstreamer{
+	position: absolute;
+	color: white;
+	display: none;
+	font-size: 16px;
+}
+.xhdot{
+	width: 12px;
+	height: 12px;
+	background-color: white;
+	float: left;
+	margin-left: 15px;
+	margin-top: 22px;
+	border-radius: 6px;
+}
+.xhvessel{
+	width: 150px;
+	position: absolute;
+	right: 0;
+	overflow: hidden;
+}
+.xhstate{
+	width: 1200px;
+	margin:0 auto;
+	border: 1px solid #dedede;
+	overflow: hidden;
+	margin-top: 15px;
+}
+
+
+
+
+
+/*di4bufen topright*/
+
+
+.xhcountry{
+	float: left;
+	width: 574px;
+	height: 335px;
+	background-color:#FFF;
+}
+.xhxi{
+	text-align: center;
+	color: #DB2242;
+	text-decoration: none;
+	font-size: 16px;
+}
+.xhxi:hover{
+	text-decoration: underline;
+}
+.xhcity{
+	margin-top: 35px;
+}
+.xhstrong{
+	color: #888;
+	font-size: 13px;
+	text-indent: 2em;
+	margin-top: 10px;
+}
+.xhsmall{
+	font-size: 12px;
+	color: #DB2242;
+	text-decoration: none;
+}
+.xhsmall:hover{
+	text-decoration: underline;
+}
+.xhbiology{
+	width: 150px;
+	height: 100px;
+	font-size: 5px;
+	list-style: square;
+	margin-left: 35px;
+	color: #444;
+	line-height: 25px;
+	float: left;
+	margin-top: 20px;
+}
+.xhbioligy{
+	width: 150px;
+	height: 100px;
+	list-style: square;
+	margin-left: 20px;
+	color: #444;
+	line-height: 25px;
+	float: left;
+	margin-left: 151px;
+	margin-top: 20px;
+	font-size: 5px;
+}
+.xhissue span{
+	font-size: 12px;
+}
+.xhissue span:hover{
+	color: #FF5A00;
+	text-decoration: underline;
+}
+
+
+ /*di4bufen bottomleft(1)*/
+
+.xhpatch{
+	width:300px;
+	height:280px;
+	float: left;
+	overflow: hidden;
+	background-color:#FFF;
+}
+.xhpeanut{
+	width: 3px;
+	height: 20px;
+	float: left;
+	background-color:#DB2242;
+}
+.xhmaize span{
+	font-size: 18px;
+	float: left;
+	color: #444;
+	margin-left: 10px;
+}
+.xhmaize{
+	width: 299px;
+	height: 25px;
+	margin-top: 35px;
+	float: left;
+	overflow: hidden;
+}
+.xhfruits{
+	width: 60px;
+	margin-left: 15px;
+	margin-top: 15px;
+	height: 22px;
+	border-radius: 30px;
+	font-size: 12px;
+	background-color:#F3F3F3;
+	color: #444;
+	float: left;
+	line-height: 22px;
+	text-align:center;
+	cursor: pointer;
+}
+.xhcotton{
+	width: 300px;
+	height: 237px;
+}
+.xhfruits:hover{
+	background-color:#DB2242;
+	color: white;
+}
+
+
+
+
+
+
+/*di4bufen leftbottom(2)*/
+
+.xhranking{
+	width: 325px;
+	height: 280px;
+	background-color:#FFF;
+	float: left;
+}
+.xhyear{
+	width: 50px;
+	height: 23px;
+	float: left;
+	border: 1px solid #CCC;
+	background-color:#F4F4F4;
+	font-size: 14px;
+	text-align:center;
+	color: #666;
+	cursor: pointer;
+	margin-left: 125px;
+}
+.xhmorth{
+	width: 50px;
+	height: 23px;
+	float: left;
+	text-align:center;
+	font-size: 14px;
+	border-top: 1px solid #DB2242;
+	border-right: 1px solid #CCC;
+	color: #666;
+	cursor: pointer;
+}
+
+
+
+
+/*di4bufen rightbottom*/
+
+.xhspecial{
+	height: 280px;
+	width: 573px;
+	float: left;
+	background-color:#FFF;
+}
+.xhactivity{
+	width: 570px;
+	height: 25px;
+	margin-top: 35px;
+	float: left;
+	overflow: hidden;
+}
+.xhactivity span{
+	font-size: 18px;
+	float: left;
+	color: #444;
+	margin-left: 10px;
+}
+.xhactivity a{
+	text-decoration:none;
+	font-size: 14px;
+	float: right;
+	margin-right: 15px;
+	color: #444;
+}
+.xhmessag img{
+	width: 258px;
+	height: 115px;
+}
+.xhfish{
+	width: 258px;
+	height: 214px;
+	float: left;
+	position: relative;
+	font-size: 0;
+	margin-top: 10px;
+}
+.xhadvertising{
+	position: absolute;
+	top: 95px;
+	left: 0;
+	font-size: 14px;
+	color: white;
+	background-color:black;
+	opacity: 0.3;
+}
+.xhdog{
+	width: 258px;
+	height: 214px;
+	float: left;
+	position: relative;
+	font-size: 0;
+	margin-left: 22px;
+	margin-top: 10px;
+}
+.xhattention{
+	width: 258px;
+	height: 35px;
+	background-color:#F3F3F3;
+	font-size: 14px;
+	text-align:center;
+	line-height: 35px;
+}
+.xhattention:hover{
+	color: #FF5A00;
+	text-decoration:underline;
+}
+.xhdog p{
+	font-size: 14px;
+	margin-top: 10px;
+}
+.xhfish p{
+	font-size: 14px;
+	margin-top: 10px;
+}
+.xhdog a:hover{
+	color: #FF5A00;
+	text-decoration:underline;
+}
+.xhfish a:hover{
+	color: #FF5A00;
+	text-decoration:underline;
+}
+
+
+ /*di5bufen hengfu*/
+
+.xhcross{
+	display: block;
+	margin:0 auto;
+	margin-top: 16px;
+	margin-bottom: 17px;
+}
+
+
+
+ /*di6bufen (1)*/
+ .xhindustry{
+ 	width: 398px;
+ 	height: 329px;
+ 	background-color:#FFF;
+ 	border: 1px solid #dedede;
+ 	margin-top: 10px;
+ 	float: left;
+ }
+ .xhbird{
+ 	width: 3px;
+ 	height: 20px;
+ 	float: left;
+ 	background-color:#DB2242;
+ }
+ .xhcat span{
+	font-size: 18px;
+	float: left;
+	color: #444;
+	margin-left: 10px;
+}
+.xhmore{
+	text-decoration:none;
+	font-size: 14px;
+	float: right;
+	margin-right: 15px;
+	color: #444;
+}
+.xhcat{
+	margin-top: 25px;
+	width: 400px;
+	height: 30px;
+	overflow: hidden;
+}
+.xhcat a:hover{
+	color: #FF5A00;
+	text-decoration:underline;
+}
+.xhcat span:hover{
+	color: #FF5A00;
+}
+.xhimgs{
+	height: 83px;
+	width: 390px;
+	overflow: hidden;
+}
+.xhimgs img{
+	float: left;
+	margin-left: 10px;
+}
+.xhshenzhen{
+	width: 270px;
+	margin-left: 10px;
+	float: left;
+}
+.xhnew:hover{
+	color: #FF5A00;
+	text-decoration:underline;
+}
+.xhtwo:hover{
+	color: #FF5A00;
+	text-decoration:underline;
+}
+.xhnew{
+	font-size: 14px;
+	margin-top: 10px;
+}
+.xhtwo{
+	font-size: 12px;
+	margin-top: 10px;
+	color: #888;
+}
+.xhone{
+	height: 100px;
+	width: 390px;
+}
+.xhfour{
+	font-size: 12px;
+	color: black;
+}
+.xhfour:hover{
+	color: #FF5A00;
+	text-decoration:underline;
+}
+.xhfive{
+	width: 1200px;
+	margin:0 auto;
+	overflow: hidden;
+}
+.xhsever{
+	font-size: 12px;
+	margin-left: 70px;
+	color: #888;
+}
+.xhthree{
+	margin-left: 10px;
+	font-size: 1px;
+}
+
+
+
+
+/*di7bufen changkuai*/
+
+.xhsix{
+	width: 590px;
+	height: 336px;
+	float: left;
+	border: 1px solid #dedede;
+	background-color:#FFF;
+	margin-top: 15px;
+}
+.xhsix1{
+	width: 580px;
+	height: 336px;
+	float: left;
+	border: 1px solid #dedede;
+	background-color:#FFF;
+	margin-left:25px;
+	margin-top: 15px;
+}
+.xhdian{
+	float: left;
+	margin-top: 10px;
+}
+.xhten{
+	float: left;
+	font-size: 18px;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+.xhtens{
+	float: left;
+	font-size: 18px;
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-right: 230px;
+}
+.xhten:hover{
+	color: #FF5A00;
+	text-decoration:underline;
+}
+.xhtens:hover{
+	color: #FF5A00;
+	text-decoration:underline;
+}
+.xhtreasure{
+	width: 70px;
+	height: 20px;
+	border: 1px solid #dedede;
+	border-radius: 10px;
+	float: left;
+	font-size: 12px;
+	text-align:center;
+	line-height:20px;
+	margin-top: 10px;
+	margin-left:8px;
+	cursor: pointer;
+}
+.xhtreasure:hover{
+	color: #FF5A00;
+	text-decoration:underline;
+}
+.xhbir{
+	width: 3px;
+ 	height: 20px;
+ 	float: left;
+ 	margin-top: 10px;
+ 	background-color:#DB2242;
+}
+.xheight{
+	width: 590px;
+	height: 46px;
+	border-bottom: 1px solid #dedede;
+	overflow: hidden;
+}
+.xhleaf{
+	position: absolute;
+	background-color:black;
+	opacity: 0.8;
+	color: white;
+	font-size: 16px;
+	width: 200px;
+	height: 30px;
+	line-height: 30px;
+	text-align:center;
+	top: 219px;
+	cursor: pointer;
+}
+.xhflower{
+	cursor: pointer;
+}
+.xhleaf:hover{
+	color: lightyellow;
+}
+.xhtree{
+	position: relative;
+	float: left;
+	margin-left: 10px;
+	margin-top: 20px;
+}
+.xhresult{
+	width: 355px;
+	height: 261px;
+	float: left;
+	margin-left: 10px;
+	margin-top: 20px;
+}
+.xhfoot{
+	font-size: 18px;
+	font-weight: 400;
+	cursor: pointer;
+}
+.xhfoot:hover{
+	color: #FF5A00;
+	text-decoration:underline;
+}
+.xhroot{
+	font-size: 13px;
+	color: #888;
+	cursor: pointer;
+}
+.xhroot:hover{
+	color: #FF5A00;
+	text-decoration:underline; 
+}
+.xhsummary{
+	width: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+
+
+
+/*di10bufen*/
+
+.xhjoint{
+	width: 1200px;
+	height: 100px;
+	margin: 0 auto;
+	margin-top: 20px;
+	overflow: hidden;
+}
+.xhsnake{
+	height: 2px;
+	margin-top: 10px;
+	width: 1200px;
+	background-color:#dedede;
+}
+.xhfriendship{
+	margin-top: 10px;
+	overflow: hidden;
+}
+.xhlink{
+	float: left;
+	font-size: 12px;
+	list-style: none;
+	margin-left: 20px;
+}
+.xhlink:hover{
+	color: #FF5A00;
+	text-decoration:underline; 
+}
+.xhfour{
+	line-height: 26px;
+}
