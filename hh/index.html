@@ -1,0 +1,179 @@
+<!--
+ * @Author: caochao
+ * @Date: 2019-06-12 22:59:40
+ * @LastEditors: caochao
+ * @LastEditTime: 2020-09-30 17:21:26
+ * @Description: 
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .view {
+            width: 400px;
+            height: 400px;
+            /* border: 1px solid black; */
+            margin: 50px auto;
+            /*景深*/
+            perspective: 1000px;
+            position: relative;
+            transform-style: preserve-3d;
+        }
+        
+        .box {
+            height: 400px;
+            position: absolute;
+            transform: rotateY(0deg);
+            transform-style: preserve-3d;
+            top: 0;
+            left: 200px;
+            animation: myfirst 3s linear infinite;
+        }
+        
+        .box2 {
+            height: 100px;
+            position: absolute;
+            transform: rotateY(180deg) translateZ(75px);
+            transform-style: preserve-3d;
+            top: 150px;
+            left: 200px;
+            animation: myfirst 3s linear infinite;
+        }
+        
+        .box div {
+            width: 200px;
+            height: 200px;
+            background: rgba(0, 0, 0, 0.5);
+            font-size: 50px;
+            line-height: 200px;
+            text-align: center;
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -100px;
+            opacity: 1;
+            background-size: 100% 100%;
+        }
+        
+        .box2 div {
+            width: 100px;
+            height: 100px;
+            background: rgba(0, 0, 0, 0.5);
+            font-size: 50px;
+            line-height: 200px;
+            text-align: center;
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -50px;
+            opacity: 0.9;
+            background-size: 100% 100%;
+        }
+        
+        .box div:nth-child(1) {
+            background-image: url(./img/a.jpg);
+            transform: rotateX(90deg) translateZ(150px)
+        }
+        
+        .box div:nth-child(2) {
+            background-image: url(./img/a.jpg);
+            transform: rotateX(180deg) translateZ(150px)
+        }
+        
+        .box div:nth-child(3) {
+            background-image: url(./img/a.jpg);
+            transform: rotateX(-90deg) translateZ(150px)
+        }
+        
+        .box div:nth-child(4) {
+            background-image: url(./img/a.jpg);
+            transform: rotateY(-90deg) translateZ(150px)
+        }
+        
+        .box div:nth-child(5) {
+            background-image: url(./img/a.jpg);
+            transform: rotateY(90deg) translateZ(150px)
+        }
+        
+        .box div:nth-child(6) {
+            background-image: url(./img/a.jpg);
+            transform: translateZ(150px)
+        }
+        
+        .box2 div:nth-child(1) {
+            background-image: url(./img/a.jpg);
+            transform: rotateX(90deg) translateZ(75px)
+        }
+        
+        .box2 div:nth-child(2) {
+            background-image: url(./img/a.jpg);
+            transform: rotateX(180deg) translateZ(75px)
+        }
+        
+        .box2 div:nth-child(3) {
+            background-image: url(./img/a.jpg);
+            transform: rotateX(-90deg) translateZ(75px)
+        }
+        
+        .box2 div:nth-child(4) {
+            background-image: url(./img/a.jpg);
+            transform: rotateY(-90deg) translateZ(75px)
+        }
+        
+        .box2 div:nth-child(5) {
+            background-image: url(./img/a.jpg);
+            transform: rotateY(90deg) translateZ(75px)
+        }
+        
+        .box2 div:nth-child(6) {
+            background-image: url(./img/a.jpg);
+            transform: translateZ(75px)
+        }
+        
+        @keyframes myfirst {
+            0% {
+                transform: rotateY(0deg);
+            }
+            100% {
+                transform: rotateY(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 舞台 -->
+    <div class="view">
+        <!-- 父容器 -->
+        <div class="box">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="box2">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
